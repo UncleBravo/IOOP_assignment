@@ -1,6 +1,6 @@
 ﻿namespace IOOP_assignment
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -74,29 +74,29 @@
             // Ba
             // 
             this.Ba.AutoSize = true;
-            this.Ba.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ba.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ba.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Ba.Location = new System.Drawing.Point(571, 53);
+            this.Ba.Location = new System.Drawing.Point(573, 39);
             this.Ba.Name = "Ba";
-            this.Ba.Size = new System.Drawing.Size(492, 40);
+            this.Ba.Size = new System.Drawing.Size(421, 54);
             this.Ba.TabIndex = 0;
             this.Ba.Text = "Sports Club Manager";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Console", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(573, 114);
+            this.label1.Location = new System.Drawing.Point(575, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(604, 81);
+            this.label1.Size = new System.Drawing.Size(515, 111);
             this.label1.TabIndex = 1;
             this.label1.Text = "Optimize your club\'s efficiency, \noversee events, monitor member data, \nand beyon" +
     "d.";
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(578, 259);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(578, 261);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(502, 43);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -111,7 +111,8 @@
             this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Lucida Console", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox1.TabIndex = 2;
-            this.kryptonTextBox1.Text = "Enter Your E-Mail Address";
+            this.kryptonTextBox1.Text = "enter E-Mail Address";
+            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
             this.kryptonTextBox1.Enter += new System.EventHandler(this.kryptonTextBox1_Enter);
             this.kryptonTextBox1.Leave += new System.EventHandler(this.kryptonTextBox1_Leave);
             // 
@@ -200,12 +201,12 @@
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources._1;
             this.pictureBox1.Location = new System.Drawing.Point(67, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 518);
+            this.pictureBox1.Size = new System.Drawing.Size(164, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -217,12 +218,13 @@
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Ba);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Palette = this.kryptonPalette2;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -11,9 +11,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class Form1 : KryptonForm
+    public partial class Login : KryptonForm
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -48,6 +48,16 @@ namespace IOOP_assignment
             {
                 kryptonTextBox2.Text = "Enter Your Password";
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

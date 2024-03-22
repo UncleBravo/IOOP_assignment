@@ -73,6 +73,36 @@ namespace IOOP_assignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("1-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("1-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_removebg_preview2 {
+            get {
+                object obj = ResourceManager.GetObject("1-removebg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _11 {
             get {
                 object obj = ResourceManager.GetObject("11", resourceCulture);
@@ -96,6 +126,36 @@ namespace IOOP_assignment.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_03_22_at_14_21_16_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024-03-22_at_14.21.16-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_03_22_at_15_44_58_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024-03-22_at_15.44.58-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_03_22_at_15_47_54_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2024-03-22_at_15.47.54-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_03_22_at_15_29_50 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-03-22 at 15.29.50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

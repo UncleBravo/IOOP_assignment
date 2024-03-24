@@ -24,7 +24,7 @@ namespace IOOP_assignment
         {
             if(kryptonTextBox1.Text == "Enter Your E-Mail Address")
             {
-                kryptonTextBox1.Text = "";
+                kryptonTextBox1.Text = "";                
             }
         }
 
@@ -41,6 +41,7 @@ namespace IOOP_assignment
             if(kryptonTextBox2.Text == "Enter Your Password")
             {
                 kryptonTextBox2.Text = "";
+                kryptonTextBox2.UseSystemPasswordChar = true;
             }
         }
 
@@ -49,22 +50,25 @@ namespace IOOP_assignment
             if (kryptonTextBox2.Text == "")
             {
                 kryptonTextBox2.Text = "Enter Your Password";
+                kryptonTextBox2.UseSystemPasswordChar = false;
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox1.Text != "Enter Your Password")
+            {
+                if(checkBox1.Checked == true)
+                {
+                    kryptonTextBox2.UseSystemPasswordChar = false;
+                }
 
-        }
-
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+                else
+                {
+                    kryptonTextBox2.UseSystemPasswordChar = true;
+                }
+            }
+                       
         }
 
         private void kryptonTextBox2_TextChanged(object sender, EventArgs e)

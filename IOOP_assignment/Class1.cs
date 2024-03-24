@@ -8,5 +8,8 @@ namespace IOOP_assignment
 {
     internal class Class1
     {
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public Class1() { }
     }
 }

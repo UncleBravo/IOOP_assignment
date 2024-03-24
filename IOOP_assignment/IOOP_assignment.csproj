@@ -67,6 +67,7 @@
     <Compile Include="Admin_Menu.Designer.cs">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="enrollment_form.cs">
       <SubType>Form</SubType>
     </Compile>

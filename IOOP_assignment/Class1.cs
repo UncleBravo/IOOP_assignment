@@ -11,5 +11,7 @@ namespace IOOP_assignment
         public string Name { get; set; }
         public string Type { get; set; }
         public Class1() { }
+        public Class1(string name, string type) {  Name = name; Type = type; }
     }
+     
 }

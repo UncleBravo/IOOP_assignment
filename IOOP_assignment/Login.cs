@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using System.Data.SqlClient;
 
 namespace IOOP_assignment
 {
@@ -16,43 +17,43 @@ namespace IOOP_assignment
         public Login()
         {
             InitializeComponent();
-            email_TxtBox.Focus();
+            user.Focus();
         }
 
         
 
         private void password_TxtBox_Enter(object sender, EventArgs e)
         {
-            if (password_TxtBox.Text == "Enter Your Password")
+            if (pass.Text == "Enter Your Password")
             {
-                password_TxtBox.Text = "";
-                password_TxtBox.UseSystemPasswordChar = true;
+                pass.Text = "";
+                pass.UseSystemPasswordChar = true;
             }
         }
 
         private void password_TxtBox_Leave(object sender, EventArgs e)
         {
-            if (password_TxtBox.Text == "")
+            if (pass.Text == "")
             {
-                password_TxtBox.Text = "Enter Your Password";
-                password_TxtBox.UseSystemPasswordChar = false;
+                pass.Text = "Enter Your Password";
+                pass.UseSystemPasswordChar = false;
             }
         }
 
 
         private void email_TxtBox_Enter(object sender, EventArgs e)
         {
-            if (email_TxtBox.Text == "Enter Your E-Mail Address")
+            if (user.Text == "Enter Your E-Mail Address")
             {
-                email_TxtBox.Text = "";
+                user.Text = "";
             }
         }
 
         private void email_TxtBox_Leave(object sender, EventArgs e)
         {
-            if (email_TxtBox.Text == "")
+            if (user.Text == "")
             {
-                email_TxtBox.Text = "Enter Your E-Mail Address";
+                user.Text = "Enter Your E-Mail Address";
             }
         }
 
@@ -62,14 +63,42 @@ namespace IOOP_assignment
             {
                 if (checkBox1.Checked == true)
                 {
-                    password_TxtBox.UseSystemPasswordChar = false;
+                    pass.UseSystemPasswordChar = false;
                 }
 
                 else
                 {
-                    password_TxtBox.UseSystemPasswordChar = true;
+                    pass.UseSystemPasswordChar = true;
                 }
             }
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-OMT0039;Initial Catalog=userlogin;Integrated Security=True");
+            string query = "SELECT COUNT(*) FROM userlogin WHERE username=@username AND password=@password";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@username", user.Text);
+            cmd.Parameters.AddWithValue("@password", pass.Text);
+            int count = (int)cmd.ExecuteScalar();
+            con.Close();
+            if (count > 0)
+            {
+                MessageBox.Show("Login Successful", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show(" Wrong credentials. Pls try again.");
+            }
+
+        
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

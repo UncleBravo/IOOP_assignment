@@ -74,6 +74,12 @@
       <DependentUpon>Admin_Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="Declaration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Declaration.Designer.cs">
+      <DependentUpon>Declaration.cs</DependentUpon>
+    </Compile>
     <Compile Include="enrollment_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Menu.resx">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Declaration.resx">
+      <DependentUpon>Declaration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="enrollment_form.resx">
       <DependentUpon>enrollment_form.cs</DependentUpon>

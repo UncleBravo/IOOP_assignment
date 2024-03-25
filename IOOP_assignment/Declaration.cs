@@ -11,15 +11,11 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class enrollment_form : KryptonForm
+    public partial class Declaration : KryptonForm
     {
-        public enrollment_form()
+        public Declaration()
         {
             InitializeComponent();
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
 
         }
     }

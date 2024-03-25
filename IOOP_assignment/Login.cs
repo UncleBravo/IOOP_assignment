@@ -90,7 +90,7 @@ namespace IOOP_assignment
             }
             else
             {
-                MessageBox.Show(" Wrong credentials. Pls try again.");
+                MessageBox.Show("Wrong credentials. Please try again.");
             }
 
         
@@ -98,7 +98,7 @@ namespace IOOP_assignment
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
     }
 }

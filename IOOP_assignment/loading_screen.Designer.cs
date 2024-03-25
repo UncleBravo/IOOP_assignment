@@ -83,6 +83,7 @@
             this.Name = "loading_screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "loading_screen";
+            this.Load += new System.EventHandler(this.loading_screen_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

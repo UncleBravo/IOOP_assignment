@@ -29,5 +29,10 @@ namespace IOOP_assignment
                 this.Hide();
             }
         }
+
+        private void loading_screen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

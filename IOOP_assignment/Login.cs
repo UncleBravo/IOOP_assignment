@@ -98,7 +98,9 @@ namespace IOOP_assignment
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            
+            enrollment_form obj1 = new enrollment_form();
+            obj1.Show();
+            this.Hide();
         }
     }
 }

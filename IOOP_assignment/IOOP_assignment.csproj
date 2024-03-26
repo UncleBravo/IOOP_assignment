@@ -61,6 +61,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_result.Designer.cs">
+      <DependentUpon>add_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_recommendation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_recommendation.Designer.cs">
+      <DependentUpon>add_recommendation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comment.Designer.cs">
+      <DependentUpon>Comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_schedule.Designer.cs">
+      <DependentUpon>edit_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_schedule.Designer.cs">
+      <DependentUpon>add_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_schedule.Designer.cs">
+      <DependentUpon>delete_schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Member_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +148,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add_result.resx">
+      <DependentUpon>add_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_recommendation.resx">
+      <DependentUpon>add_recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comment.resx">
+      <DependentUpon>Comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_schedule.resx">
+      <DependentUpon>edit_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_schedule.resx">
+      <DependentUpon>add_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_schedule.resx">
+      <DependentUpon>delete_schedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Member_Form.resx">
       <DependentUpon>Member_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +332,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp_Image_2024-03-26_at_11.27.29__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp_Image_2024-03-26_at_11.27.29-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

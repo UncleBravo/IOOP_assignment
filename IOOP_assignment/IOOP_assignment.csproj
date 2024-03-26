@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_Menu.Designer.cs">
+      <DependentUpon>Manager_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Manager_Menu.resx">
+      <DependentUpon>Manager_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_Menu.resx">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
     </EmbeddedResource>

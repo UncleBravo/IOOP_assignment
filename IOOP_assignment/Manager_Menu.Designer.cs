@@ -1,6 +1,6 @@
 ﻿namespace IOOP_assignment
 {
-    partial class Admin_Menu
+    partial class Manager_Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -49,9 +49,11 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
@@ -90,6 +92,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -208,9 +211,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(168, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 49);
+            this.label1.Size = new System.Drawing.Size(191, 49);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Admin";
+            this.label1.Text = "Manager";
             // 
             // pictureBox1
             // 
@@ -374,6 +377,22 @@
             this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button25.UseVisualStyleBackColor = true;
             // 
+            // button24
+            // 
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(918, 330);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(307, 60);
+            this.button24.TabIndex = 41;
+            this.button24.Text = "       Yearly";
+            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button24.UseVisualStyleBackColor = true;
+            // 
             // button23
             // 
             this.button23.FlatAppearance.BorderSize = 0;
@@ -381,7 +400,7 @@
             this.button23.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(918, 322);
+            this.button23.Location = new System.Drawing.Point(918, 396);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(313, 60);
             this.button23.TabIndex = 42;
@@ -397,7 +416,7 @@
             this.button22.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(918, 388);
+            this.button22.Location = new System.Drawing.Point(918, 462);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(313, 60);
             this.button22.TabIndex = 43;
@@ -415,6 +434,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 51;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::IOOP_assignment.Properties.Resources.calendar;
+            this.pictureBox19.Location = new System.Drawing.Point(1101, 342);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 38;
+            this.pictureBox19.TabStop = false;
             // 
             // pictureBox16
             // 
@@ -439,7 +468,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::IOOP_assignment.Properties.Resources.hand;
-            this.pictureBox17.Location = new System.Drawing.Point(1101, 403);
+            this.pictureBox17.Location = new System.Drawing.Point(1101, 477);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(95, 40);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -459,7 +488,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = global::IOOP_assignment.Properties.Resources.money;
-            this.pictureBox18.Location = new System.Drawing.Point(1101, 337);
+            this.pictureBox18.Location = new System.Drawing.Point(1101, 411);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(95, 40);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -806,7 +835,7 @@
             this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button27.UseVisualStyleBackColor = true;
             // 
-            // Admin_Menu
+            // Manager_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -838,12 +867,14 @@
             this.Controls.Add(this.button9);
             this.Controls.Add(this.coach_view);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.button24);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.pictureBox13);
@@ -860,7 +891,7 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Admin_Menu";
+            this.Name = "Manager_Menu";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -871,6 +902,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
@@ -923,6 +955,8 @@
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Button button22;

@@ -11,9 +11,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class Admin_Menu : KryptonForm
+    public partial class Manager_Menu : KryptonForm
     {
-        public Admin_Menu()
+        public Manager_Menu()
         {
             InitializeComponent();
             
@@ -21,11 +21,6 @@ namespace IOOP_assignment
         private void button7_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

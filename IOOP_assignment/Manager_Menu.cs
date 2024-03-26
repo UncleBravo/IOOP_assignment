@@ -37,5 +37,10 @@ namespace IOOP_assignment
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

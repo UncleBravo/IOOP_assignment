@@ -16,14 +16,6 @@ namespace IOOP_assignment
         public Admin_Menu()
         {
             InitializeComponent();
-            StartPosition = FormStartPosition.Manual;
-            Rectangle screen = Screen.FromPoint(Cursor.Position).WorkingArea;
-
-            int w = Math.Min(Width, screen.Width);
-            int h = Math.Min(Height, screen.Height);
-
-            Location = new Point(screen.Left + (screen.Width - w) / 2, screen.Top + (screen.Height - h) / 2);
-            Size = new Size(w, h);
             
         }
 

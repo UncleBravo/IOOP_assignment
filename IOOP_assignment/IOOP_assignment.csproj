@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_competition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_competition.Designer.cs">
+      <DependentUpon>add_competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_competition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_competition.Designer.cs">
+      <DependentUpon>delete_competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_member.Designer.cs">
+      <DependentUpon>delete_member.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_result.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,24 @@
     </Compile>
     <Compile Include="add_recommendation.Designer.cs">
       <DependentUpon>add_recommendation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_member.Designer.cs">
+      <DependentUpon>add_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_user_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_user_type.Designer.cs">
+      <DependentUpon>delete_user_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_user_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_user_type.Designer.cs">
+      <DependentUpon>view_user_type.cs</DependentUpon>
     </Compile>
     <Compile Include="add_user_type.cs">
       <SubType>Form</SubType>
@@ -172,11 +208,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add_competition.resx">
+      <DependentUpon>add_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_competition.resx">
+      <DependentUpon>delete_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_member.resx">
+      <DependentUpon>delete_member.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_result.resx">
       <DependentUpon>add_result.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_recommendation.resx">
       <DependentUpon>add_recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_member.resx">
+      <DependentUpon>add_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_user_type.resx">
+      <DependentUpon>delete_user_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_user_type.resx">
+      <DependentUpon>view_user_type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_user_type.resx">
       <DependentUpon>add_user_type.cs</DependentUpon>
@@ -374,6 +428,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp_Image_2024-03-26_at_11.27.29-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-management.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

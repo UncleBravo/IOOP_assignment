@@ -39,5 +39,19 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void view_user_Click(object sender, EventArgs e)
+        {
+            view_user_type form2 = new view_user_type();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void delete_user_Click(object sender, EventArgs e)
+        {
+            delete_user_type form3 = new delete_user_type();
+            form3.Show();
+            this.Hide();
+        }
     }
 }

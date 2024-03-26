@@ -73,6 +73,12 @@
     <Compile Include="add_recommendation.Designer.cs">
       <DependentUpon>add_recommendation.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_user_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_user_type.Designer.cs">
+      <DependentUpon>add_user_type.cs</DependentUpon>
+    </Compile>
     <Compile Include="member_feedback.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="add_recommendation.resx">
       <DependentUpon>add_recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_user_type.resx">
+      <DependentUpon>add_user_type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="member_feedback.resx">
       <DependentUpon>member_feedback.cs</DependentUpon>

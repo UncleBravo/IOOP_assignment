@@ -32,12 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.PnlNav = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,7 +56,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.add_user = new System.Windows.Forms.Button();
             this.coach_view = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button28 = new System.Windows.Forms.Button();
@@ -79,12 +77,12 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -102,7 +100,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,17 +143,6 @@
             this.button5.Text = "Update Profile";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 37;
-            this.pictureBox6.TabStop = false;
             // 
             // kryptonPalette1
             // 
@@ -211,17 +200,6 @@
             this.label1.Size = new System.Drawing.Size(149, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources._128_1280822_check_mark_box_clip_art_blue_admin_icon_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -523,22 +501,23 @@
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // add_user
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(323, 388);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(313, 60);
-            this.button9.TabIndex = 55;
-            this.button9.Text = "       Add";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button9.UseVisualStyleBackColor = true;
+            this.add_user.FlatAppearance.BorderSize = 0;
+            this.add_user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_user.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
+            this.add_user.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_user.Location = new System.Drawing.Point(323, 388);
+            this.add_user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_user.Name = "add_user";
+            this.add_user.Size = new System.Drawing.Size(313, 60);
+            this.add_user.TabIndex = 55;
+            this.add_user.Text = "       Add";
+            this.add_user.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_user.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.add_user.UseVisualStyleBackColor = true;
+            this.add_user.Click += new System.EventHandler(this.add_user_Click);
             // 
             // coach_view
             // 
@@ -739,7 +718,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::IOOP_assignment.Properties.Resources.graduated;
+            this.pictureBox14.Image = global::IOOP_assignment.Properties.Resources.team;
             this.pictureBox14.Location = new System.Drawing.Point(818, 466);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
@@ -770,6 +749,17 @@
             this.pictureBox12.TabIndex = 28;
             this.pictureBox12.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources._128_1280822_check_mark_box_clip_art_blue_admin_icon_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
@@ -780,6 +770,17 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 28;
             this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
+            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 37;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -817,7 +818,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.add_user);
             this.Controls.Add(this.coach_view);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox16);
@@ -848,11 +849,10 @@
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Admin_Menu_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -870,7 +870,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -925,7 +927,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button add_user;
         private System.Windows.Forms.Button coach_view;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox24;

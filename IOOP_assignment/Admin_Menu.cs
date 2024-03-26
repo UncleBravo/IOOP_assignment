@@ -27,5 +27,17 @@ namespace IOOP_assignment
         {
 
         }
+
+        private void Admin_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_user_Click(object sender, EventArgs e)
+        {
+            add_user_type form1 = new add_user_type();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

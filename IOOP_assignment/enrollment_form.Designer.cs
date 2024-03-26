@@ -32,16 +32,16 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label32 = new System.Windows.Forms.Label();
             this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.kryptonTextBox11 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -65,8 +65,6 @@
             this.kryptonTextBox17 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.kryptonTextBox18 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.kryptonTextBox9 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -96,36 +94,26 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label28 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
-            this.kryptonPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonPalette1
-            // 
-            this.kryptonPalette1.BasePaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.label1);
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(1219, 208);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
-            this.kryptonPanel1.StateCommon.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel1.TabIndex = 0;
             // 
             // label1
@@ -133,22 +121,14 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(247, 38);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label1.Location = new System.Drawing.Point(98, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(506, 134);
+            this.label1.Size = new System.Drawing.Size(689, 134);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Sports Community\n Enrollment Form";
-            // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.Controls.Add(this.pictureBox1);
-            this.kryptonPanel2.Location = new System.Drawing.Point(895, 3);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(280, 388);
-            this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(102)))), ((int)(((byte)(155)))));
-            this.kryptonPanel2.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(102)))), ((int)(((byte)(155)))));
-            this.kryptonPanel2.StateCommon.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonPanel2.TabIndex = 1;
+            this.label1.Text = "SPORTS COMMUNITY\nENROLLEMENT FORM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -190,6 +170,8 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label30);
+            this.panel3.Controls.Add(this.label28);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.checkBox3);
@@ -198,7 +180,6 @@
             this.panel3.Controls.Add(this.label32);
             this.panel3.Controls.Add(this.kryptonComboBox1);
             this.panel3.Controls.Add(this.label31);
-            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.kryptonTextBox11);
             this.panel3.Controls.Add(this.label17);
@@ -221,13 +202,28 @@
             this.panel3.Controls.Add(this.kryptonTextBox17);
             this.panel3.Controls.Add(this.label27);
             this.panel3.Controls.Add(this.kryptonTextBox18);
-            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label29);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1185, 3216);
             this.panel3.TabIndex = 28;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(437, 565);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(615, 130);
+            this.textBox2.TabIndex = 36;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(448, 1182);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(615, 78);
+            this.textBox1.TabIndex = 35;
             // 
             // checkBox3
             // 
@@ -295,25 +291,17 @@
             this.label31.TabIndex = 29;
             this.label31.Text = "Preferred Sports/\nActivities";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.panel5.Controls.Add(this.label30);
-            this.panel5.Location = new System.Drawing.Point(417, 1405);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(472, 100);
-            this.panel5.TabIndex = 28;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.label30.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(49, 25);
+            this.label30.Location = new System.Drawing.Point(409, 1445);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(360, 45);
             this.label30.TabIndex = 1;
             this.label30.Text = "Sports Preferences";
+            this.label30.Click += new System.EventHandler(this.label30_Click_1);
             // 
             // label16
             // 
@@ -464,7 +452,6 @@
             // 
             this.kryptonDateTimePicker2.Location = new System.Drawing.Point(430, 360);
             this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
-            this.kryptonDateTimePicker2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Global;
             this.kryptonDateTimePicker2.Size = new System.Drawing.Size(323, 37);
             this.kryptonDateTimePicker2.TabIndex = 8;
             // 
@@ -509,26 +496,6 @@
             this.kryptonTextBox18.Name = "kryptonTextBox18";
             this.kryptonTextBox18.Size = new System.Drawing.Size(254, 39);
             this.kryptonTextBox18.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.panel4.Controls.Add(this.label28);
-            this.panel4.Location = new System.Drawing.Point(417, 39);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(472, 100);
-            this.panel4.TabIndex = 2;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.label28.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(29, 25);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(406, 45);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Personal Information";
             // 
             // label29
             // 
@@ -716,7 +683,6 @@
             // 
             this.kryptonDateTimePicker1.Location = new System.Drawing.Point(430, 1332);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Global;
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(323, 37);
             this.kryptonDateTimePicker1.TabIndex = 8;
             // 
@@ -792,32 +758,27 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(448, 1182);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(615, 78);
-            this.textBox1.TabIndex = 35;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(437, 565);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(615, 130);
-            this.textBox2.TabIndex = 36;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(102)))), ((int)(((byte)(155)))));
-            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_22_at_18_56_53_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -114);
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_33_49_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(858, -75);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 455);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 392);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label28.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(409, 64);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(406, 45);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Personal Information";
             // 
             // enrollment_form
             // 
@@ -835,17 +796,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
-            this.kryptonPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -858,9 +813,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
@@ -890,7 +843,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label16;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox11;
@@ -914,8 +866,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox17;
         private System.Windows.Forms.Label label27;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox18;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
@@ -925,5 +875,7 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label28;
     }
 }

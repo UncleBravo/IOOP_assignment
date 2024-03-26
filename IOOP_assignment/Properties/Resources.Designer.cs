@@ -459,5 +459,15 @@ namespace IOOP_assignment.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_03_26_at_11_33_49_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024-03-26_at_11.33.49-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

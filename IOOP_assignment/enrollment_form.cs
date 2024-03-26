@@ -22,5 +22,15 @@ namespace IOOP_assignment
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

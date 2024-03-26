@@ -31,9 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -42,7 +45,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.kryptonTextBox11 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -94,15 +96,16 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -115,6 +118,17 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(1219, 208);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
             this.kryptonPanel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_33_49_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(858, -75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 392);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -170,6 +184,8 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.kryptonComboBox2);
+            this.panel3.Controls.Add(this.label33);
             this.panel3.Controls.Add(this.label30);
             this.panel3.Controls.Add(this.label28);
             this.panel3.Controls.Add(this.textBox2);
@@ -208,6 +224,29 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1185, 3216);
             this.panel3.TabIndex = 28;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label30.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(409, 1445);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(360, 45);
+            this.label30.TabIndex = 1;
+            this.label30.Text = "Sports Preferences";
+            this.label30.Click += new System.EventHandler(this.label30_Click_1);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label28.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(409, 64);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(406, 45);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Personal Information";
             // 
             // textBox2
             // 
@@ -274,7 +313,8 @@
             this.kryptonComboBox1.Items.AddRange(new object[] {
             "Beginner",
             "Intermediate",
-            "Advanced"});
+            "Advanced",
+            "Coaching"});
             this.kryptonComboBox1.Location = new System.Drawing.Point(417, 1715);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(274, 37);
@@ -290,18 +330,6 @@
             this.label31.Size = new System.Drawing.Size(280, 78);
             this.label31.TabIndex = 29;
             this.label31.Text = "Preferred Sports/\nActivities";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.label30.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(409, 1445);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(360, 45);
-            this.label30.TabIndex = 1;
-            this.label30.Text = "Sports Preferences";
-            this.label30.Click += new System.EventHandler(this.label30_Click_1);
             // 
             // label16
             // 
@@ -758,27 +786,28 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
             // 
-            // pictureBox1
+            // label33
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
-            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_33_49_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(858, -75);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 392);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(112, 1319);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(164, 39);
+            this.label33.TabIndex = 37;
+            this.label33.Text = "User Type";
             // 
-            // label28
+            // kryptonComboBox2
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.label28.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(409, 64);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(406, 45);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Personal Information";
+            this.kryptonComboBox2.DropDownWidth = 274;
+            this.kryptonComboBox2.Items.AddRange(new object[] {
+            "Coach",
+            "Manager",
+            "Member"});
+            this.kryptonComboBox2.Location = new System.Drawing.Point(448, 1319);
+            this.kryptonComboBox2.Name = "kryptonComboBox2";
+            this.kryptonComboBox2.Size = new System.Drawing.Size(274, 37);
+            this.kryptonComboBox2.TabIndex = 38;
+            this.kryptonComboBox2.Text = "---- Select Type ----";
             // 
             // enrollment_form
             // 
@@ -796,6 +825,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -803,7 +833,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -877,5 +907,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label28;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
+        private System.Windows.Forms.Label label33;
     }
 }

@@ -37,11 +37,6 @@ namespace IOOP_assignment
             Application.Exit();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
@@ -53,6 +48,11 @@ namespace IOOP_assignment
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }

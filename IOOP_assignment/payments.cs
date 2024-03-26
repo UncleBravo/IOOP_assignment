@@ -11,11 +11,16 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class add_schedule : KryptonForm
+    public partial class payments : KryptonForm
     {
-        public add_schedule()
+        public payments()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

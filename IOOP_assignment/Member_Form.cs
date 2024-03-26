@@ -23,9 +23,25 @@ namespace IOOP_assignment
             Application.Exit();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void add_payment_Click(object sender, EventArgs e)
         {
+            payments form1 = new payments();
+            form1.Show();
+            this.Hide();
+        }
 
+        private void unenrollment_button_Click(object sender, EventArgs e)
+        {
+            unenrollment_form form2 = new unenrollment_form();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void send_feedback_Click(object sender, EventArgs e)
+        {
+            member_feedback form3 = new member_feedback();
+            form3.Show();
+            this.Hide();
         }
     }
 }

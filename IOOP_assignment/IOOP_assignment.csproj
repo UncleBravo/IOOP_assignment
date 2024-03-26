@@ -73,6 +73,24 @@
     <Compile Include="add_recommendation.Designer.cs">
       <DependentUpon>add_recommendation.cs</DependentUpon>
     </Compile>
+    <Compile Include="member_feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="member_feedback.Designer.cs">
+      <DependentUpon>member_feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unenrollment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unenrollment_form.Designer.cs">
+      <DependentUpon>unenrollment_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payments.Designer.cs">
+      <DependentUpon>payments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Comment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +171,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="add_recommendation.resx">
       <DependentUpon>add_recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="member_feedback.resx">
+      <DependentUpon>member_feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unenrollment_form.resx">
+      <DependentUpon>unenrollment_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payments.resx">
+      <DependentUpon>payments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Comment.resx">
       <DependentUpon>Comment.cs</DependentUpon>

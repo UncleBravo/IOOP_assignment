@@ -16,7 +16,7 @@ namespace IOOP_assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new add_schedule());
+            Application.Run(new loading_screen());
         }
     }
 }

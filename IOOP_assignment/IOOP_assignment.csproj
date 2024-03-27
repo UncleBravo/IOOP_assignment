@@ -118,6 +118,12 @@
     <Compile Include="delete_user_type.Designer.cs">
       <DependentUpon>delete_user_type.cs</DependentUpon>
     </Compile>
+    <Compile Include="enrollment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enrollment_form.Designer.cs">
+      <DependentUpon>enrollment_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_user_type.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,12 +208,6 @@
     <Compile Include="Declaration.Designer.cs">
       <DependentUpon>Declaration.cs</DependentUpon>
     </Compile>
-    <Compile Include="enrollment_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="enrollment_form.Designer.cs">
-      <DependentUpon>enrollment_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="loading_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="delete_user_type.resx">
       <DependentUpon>delete_user_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enrollment_form.resx">
+      <DependentUpon>enrollment_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_user_type.resx">
       <DependentUpon>view_user_type.cs</DependentUpon>
@@ -284,9 +287,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Declaration.resx">
       <DependentUpon>Declaration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="enrollment_form.resx">
-      <DependentUpon>enrollment_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loading_screen.resx">
       <DependentUpon>loading_screen.cs</DependentUpon>

@@ -386,9 +386,9 @@
             // 
             this.kryptonComboBox2.DropDownWidth = 278;
             this.kryptonComboBox2.Items.AddRange(new object[] {
-            "Football",
-            "Basketball",
-            "Badminton"});
+            "Badminton",
+            "Table Tennis",
+            "Golf"});
             this.kryptonComboBox2.Location = new System.Drawing.Point(598, 1224);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(278, 37);

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using System.Data.SqlClient;
 
 namespace IOOP_assignment
 {
@@ -16,48 +17,71 @@ namespace IOOP_assignment
         public Login()
         {
             InitializeComponent();
+            user.Focus();
         }
 
-        private void kryptonTextBox1_Enter(object sender, EventArgs e)
+        
+
+        private void password_TxtBox_Enter(object sender, EventArgs e)
         {
-            if(kryptonTextBox1.Text == "Enter Your E-Mail Address")
+            if (pass.Text == "Enter Your Password")
             {
-                kryptonTextBox1.Text = "";
+                pass.Text = "";
+                pass.UseSystemPasswordChar = true;
             }
         }
 
-        private void kryptonTextBox1_Leave(object sender, EventArgs e)
+        private void password_TxtBox_Leave(object sender, EventArgs e)
         {
-            if(kryptonTextBox1.Text == "")
+            if (pass.Text == "")
             {
-                kryptonTextBox1.Text = "Enter Your E-Mail Address";
+                pass.Text = "Enter Your Password";
+                pass.UseSystemPasswordChar = false;
             }
         }
 
-        private void kryptonTextBox2_Enter(object sender, EventArgs e)
+
+        private void email_TxtBox_Enter(object sender, EventArgs e)
         {
-            if(kryptonTextBox2.Text == "Enter Your Password")
+            if (user.Text == "Enter Your E-Mail Address")
             {
-                kryptonTextBox2.Text = "";
+                user.Text = "";
             }
         }
 
-        private void kryptonTextBox2_Leave(object sender, EventArgs e)
+        private void email_TxtBox_Leave(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "")
+            if (user.Text == "")
             {
-                kryptonTextBox2.Text = "Enter Your Password";
+                user.Text = "Enter Your E-Mail Address";
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox1.Text != "Enter Your Password")
+            {
+                if (checkBox1.Checked == true)
+                {
+                    pass.UseSystemPasswordChar = false;
+                }
 
+                else
+                {
+                    pass.UseSystemPasswordChar = true;
+                }
+            }
         }
 
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        private void kryptonButton1_Click(object sender, EventArgs e)
         {
+        }
 
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            enrollment_form obj1 = new enrollment_form();
+            obj1.Show();
+            this.Hide();
         }
     }
 }

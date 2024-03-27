@@ -41,9 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.add_result = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.add_recommendation = new System.Windows.Forms.Button();
@@ -52,7 +50,6 @@
             this.add_schedule = new System.Windows.Forms.Button();
             this.delete_schedule = new System.Windows.Forms.Button();
             this.edit_schedule = new System.Windows.Forms.Button();
-            this.add_comment = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -60,12 +57,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.add_comment = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
@@ -77,10 +73,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -232,24 +226,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Schedules";
             // 
-            // add_result
-            // 
-            this.add_result.FlatAppearance.BorderSize = 0;
-            this.add_result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_result.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_result.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.add_result.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_result.Location = new System.Drawing.Point(741, 521);
-            this.add_result.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.add_result.Name = "add_result";
-            this.add_result.Size = new System.Drawing.Size(370, 60);
-            this.add_result.TabIndex = 33;
-            this.add_result.Text = "       Add Result";
-            this.add_result.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_result.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.add_result.UseVisualStyleBackColor = true;
-            this.add_result.Click += new System.EventHandler(this.add_result_Click);
-            // 
             // button20
             // 
             this.button20.FlatAppearance.BorderSize = 0;
@@ -257,7 +233,7 @@
             this.button20.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(783, 411);
+            this.button20.Location = new System.Drawing.Point(783, 341);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(313, 109);
@@ -266,23 +242,6 @@
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(783, 341);
-            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(313, 60);
-            this.button19.TabIndex = 31;
-            this.button19.Text = "       Students";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button19.UseVisualStyleBackColor = true;
             // 
             // button16
             // 
@@ -325,7 +284,7 @@
             this.add_recommendation.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_recommendation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.add_recommendation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_recommendation.Location = new System.Drawing.Point(741, 591);
+            this.add_recommendation.Location = new System.Drawing.Point(741, 454);
             this.add_recommendation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_recommendation.Name = "add_recommendation";
             this.add_recommendation.Size = new System.Drawing.Size(313, 60);
@@ -420,28 +379,10 @@
             this.edit_schedule.UseVisualStyleBackColor = true;
             this.edit_schedule.Click += new System.EventHandler(this.edit_schedule_Click);
             // 
-            // add_comment
-            // 
-            this.add_comment.FlatAppearance.BorderSize = 0;
-            this.add_comment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_comment.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_comment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.add_comment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_comment.Location = new System.Drawing.Point(1243, 428);
-            this.add_comment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.add_comment.Name = "add_comment";
-            this.add_comment.Size = new System.Drawing.Size(313, 60);
-            this.add_comment.TabIndex = 80;
-            this.add_comment.Text = "       Comment";
-            this.add_comment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_comment.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.add_comment.UseVisualStyleBackColor = true;
-            this.add_comment.Click += new System.EventHandler(this.add_comment_Click);
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::IOOP_assignment.Properties.Resources.business;
-            this.pictureBox9.Location = new System.Drawing.Point(1437, 438);
+            this.pictureBox9.Location = new System.Drawing.Point(959, 527);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(95, 40);
@@ -474,7 +415,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::IOOP_assignment.Properties.Resources.add;
-            this.pictureBox3.Location = new System.Drawing.Point(965, 601);
+            this.pictureBox3.Location = new System.Drawing.Point(965, 464);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(95, 40);
@@ -515,17 +456,6 @@
             this.pictureBox22.TabIndex = 52;
             this.pictureBox22.TabStop = false;
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::IOOP_assignment.Properties.Resources.business;
-            this.pictureBox16.Location = new System.Drawing.Point(965, 532);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(95, 40);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 36;
-            this.pictureBox16.TabStop = false;
-            // 
             // pictureBox17
             // 
             this.pictureBox17.Image = global::IOOP_assignment.Properties.Resources.hand;
@@ -540,24 +470,13 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::IOOP_assignment.Properties.Resources.competitive;
-            this.pictureBox15.Location = new System.Drawing.Point(965, 428);
+            this.pictureBox15.Location = new System.Drawing.Point(965, 358);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(95, 40);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 35;
             this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::IOOP_assignment.Properties.Resources.graduated;
-            this.pictureBox14.Location = new System.Drawing.Point(965, 356);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(95, 40);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 34;
-            this.pictureBox14.TabStop = false;
             // 
             // pictureBox11
             // 
@@ -573,13 +492,31 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_58_52_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(739, 148);
+            this.pictureBox2.Location = new System.Drawing.Point(741, 123);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(827, 879);
+            this.pictureBox2.Size = new System.Drawing.Size(825, 904);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 82;
             this.pictureBox2.TabStop = false;
+            // 
+            // add_comment
+            // 
+            this.add_comment.FlatAppearance.BorderSize = 0;
+            this.add_comment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_comment.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_comment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
+            this.add_comment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_comment.Location = new System.Drawing.Point(741, 518);
+            this.add_comment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_comment.Name = "add_comment";
+            this.add_comment.Size = new System.Drawing.Size(313, 60);
+            this.add_comment.TabIndex = 80;
+            this.add_comment.Text = "       Progress";
+            this.add_comment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_comment.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.add_comment.UseVisualStyleBackColor = true;
+            this.add_comment.Click += new System.EventHandler(this.add_comment_Click);
             // 
             // Coach_Menu
             // 
@@ -603,17 +540,13 @@
             this.Controls.Add(this.delete_schedule);
             this.Controls.Add(this.add_schedule);
             this.Controls.Add(this.coach_view);
-            this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.add_result);
             this.Controls.Add(this.button20);
-            this.Controls.Add(this.button19);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -636,10 +569,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -658,12 +589,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Button add_result;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -681,9 +608,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button edit_schedule;
-        private System.Windows.Forms.Button add_comment;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button add_comment;
     }
 }

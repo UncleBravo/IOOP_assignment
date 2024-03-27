@@ -32,26 +32,20 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.SignupForm = new System.Windows.Forms.Panel();
-            this.Female = new System.Windows.Forms.RadioButton();
-            this.Male = new System.Windows.Forms.RadioButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btologin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.register = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.pass = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.user = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label34 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.TextBox();
-            this.mc = new System.Windows.Forms.TextBox();
-            this.skill = new System.Windows.Forms.Label();
-            this.ss = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.sport = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.cont = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -71,9 +65,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.last = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.first = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label28 = new System.Windows.Forms.Label();
+            this.kryptonTextBox18 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.kryptonTextBox9 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -103,23 +95,25 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.kryptonTextBox10 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.kryptonTextBox16 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label36 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
-            this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.SignupForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ss)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.label1);
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -133,35 +127,14 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(185, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label1.Location = new System.Drawing.Point(98, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 104);
+            this.label1.Size = new System.Drawing.Size(689, 134);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Sports Community\n Enrollment Form";
-            // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.Controls.Add(this.pictureBox1);
-            this.kryptonPanel2.Location = new System.Drawing.Point(671, 2);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(210, 310);
-            this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(102)))), ((int)(((byte)(155)))));
-            this.kryptonPanel2.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(102)))), ((int)(((byte)(155)))));
-            this.kryptonPanel2.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(102)))), ((int)(((byte)(155)))));
-            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_22_at_18_56_53_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -91);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 364);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label1.Text = "SPORTS COMMUNITY\nENROLLEMENT FORM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -203,53 +176,116 @@
             // 
             // SignupForm
             // 
-            this.SignupForm.AutoScroll = true;
-            this.SignupForm.Controls.Add(this.Female);
-            this.SignupForm.Controls.Add(this.Male);
-            this.SignupForm.Controls.Add(this.comboBox2);
-            this.SignupForm.Controls.Add(this.btologin);
-            this.SignupForm.Controls.Add(this.register);
-            this.SignupForm.Controls.Add(this.pass);
-            this.SignupForm.Controls.Add(this.user);
-            this.SignupForm.Controls.Add(this.label34);
-            this.SignupForm.Controls.Add(this.label33);
-            this.SignupForm.Controls.Add(this.add);
-            this.SignupForm.Controls.Add(this.mc);
-            this.SignupForm.Controls.Add(this.skill);
-            this.SignupForm.Controls.Add(this.ss);
-            this.SignupForm.Controls.Add(this.sport);
-            this.SignupForm.Controls.Add(this.panel5);
-            this.SignupForm.Controls.Add(this.label16);
-            this.SignupForm.Controls.Add(this.cont);
-            this.SignupForm.Controls.Add(this.label17);
-            this.SignupForm.Controls.Add(this.label18);
-            this.SignupForm.Controls.Add(this.lcfname);
-            this.SignupForm.Controls.Add(this.label19);
-            this.SignupForm.Controls.Add(this.ecfname);
-            this.SignupForm.Controls.Add(this.label20);
-            this.SignupForm.Controls.Add(this.phone);
-            this.SignupForm.Controls.Add(this.label21);
-            this.SignupForm.Controls.Add(this.email);
-            this.SignupForm.Controls.Add(this.label22);
-            this.SignupForm.Controls.Add(this.label23);
-            this.SignupForm.Controls.Add(this.gen);
-            this.SignupForm.Controls.Add(this.dob);
-            this.SignupForm.Controls.Add(this.label25);
-            this.SignupForm.Controls.Add(this.label26);
-            this.SignupForm.Controls.Add(this.last);
-            this.SignupForm.Controls.Add(this.label27);
-            this.SignupForm.Controls.Add(this.first);
-            this.SignupForm.Controls.Add(this.panel4);
-            this.SignupForm.Controls.Add(this.label29);
-            this.SignupForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SignupForm.Location = new System.Drawing.Point(0, 0);
-            this.SignupForm.Margin = new System.Windows.Forms.Padding(2);
-            this.SignupForm.Name = "SignupForm";
-            this.SignupForm.Size = new System.Drawing.Size(888, 2572);
-            this.SignupForm.TabIndex = 28;
-            this.SignupForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.kryptonTextBox16);
+            this.panel3.Controls.Add(this.label36);
+            this.panel3.Controls.Add(this.kryptonTextBox10);
+            this.panel3.Controls.Add(this.label34);
+            this.panel3.Controls.Add(this.label35);
+            this.panel3.Controls.Add(this.kryptonComboBox2);
+            this.panel3.Controls.Add(this.label33);
+            this.panel3.Controls.Add(this.label30);
+            this.panel3.Controls.Add(this.label28);
+            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.checkBox3);
+            this.panel3.Controls.Add(this.checkBox2);
+            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Controls.Add(this.label32);
+            this.panel3.Controls.Add(this.kryptonComboBox1);
+            this.panel3.Controls.Add(this.label31);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.kryptonTextBox11);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.kryptonTextBox12);
+            this.panel3.Controls.Add(this.label19);
+            this.panel3.Controls.Add(this.kryptonTextBox13);
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Controls.Add(this.kryptonTextBox14);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.kryptonTextBox15);
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.radioButton3);
+            this.panel3.Controls.Add(this.radioButton4);
+            this.panel3.Controls.Add(this.label24);
+            this.panel3.Controls.Add(this.kryptonDateTimePicker2);
+            this.panel3.Controls.Add(this.label25);
+            this.panel3.Controls.Add(this.label26);
+            this.panel3.Controls.Add(this.kryptonTextBox17);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.kryptonTextBox18);
+            this.panel3.Controls.Add(this.label29);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1185, 4338);
+            this.panel3.TabIndex = 28;
             // 
-            // Female
+            // kryptonComboBox2
+            // 
+            this.kryptonComboBox2.DropDownWidth = 274;
+            this.kryptonComboBox2.Items.AddRange(new object[] {
+            "Coach",
+            "Manager",
+            "Member"});
+            this.kryptonComboBox2.Location = new System.Drawing.Point(448, 1319);
+            this.kryptonComboBox2.Name = "kryptonComboBox2";
+            this.kryptonComboBox2.Size = new System.Drawing.Size(274, 37);
+            this.kryptonComboBox2.TabIndex = 38;
+            this.kryptonComboBox2.Text = "---- Select Type ----";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(112, 1319);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(164, 39);
+            this.label33.TabIndex = 37;
+            this.label33.Text = "User Type";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label30.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(409, 1445);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(360, 45);
+            this.label30.TabIndex = 1;
+            this.label30.Text = "Sports Preferences";
+            this.label30.Click += new System.EventHandler(this.label30_Click_1);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label28.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(409, 64);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(406, 45);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Personal Information";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(437, 565);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(615, 130);
+            this.textBox2.TabIndex = 36;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(448, 1182);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(615, 78);
+            this.textBox1.TabIndex = 35;
+            // 
+            // checkBox3
             // 
             this.Female.AutoSize = true;
             this.Female.Location = new System.Drawing.Point(498, 383);
@@ -482,13 +518,13 @@
             this.ss.Items.AddRange(new object[] {
             "Beginner",
             "Intermediate",
-            "Advanced"});
-            this.ss.Location = new System.Drawing.Point(312, 1458);
-            this.ss.Margin = new System.Windows.Forms.Padding(2);
-            this.ss.Name = "ss";
-            this.ss.Size = new System.Drawing.Size(206, 29);
-            this.ss.TabIndex = 30;
-            this.ss.Text = "---- Skill Level ----";
+            "Advanced",
+            "Coaching"});
+            this.kryptonComboBox1.Location = new System.Drawing.Point(417, 1715);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.Size = new System.Drawing.Size(274, 37);
+            this.kryptonComboBox1.TabIndex = 30;
+            this.kryptonComboBox1.Text = "---- Skill Level ----";
             // 
             // sport
             // 
@@ -500,28 +536,6 @@
             this.sport.Size = new System.Drawing.Size(209, 58);
             this.sport.TabIndex = 29;
             this.sport.Text = "Preferred Sports/\nActivities";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.panel5.Controls.Add(this.label30);
-            this.panel5.Location = new System.Drawing.Point(313, 1234);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(354, 80);
-            this.panel5.TabIndex = 28;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.label30.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(38, 22);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(282, 35);
-            this.label30.TabIndex = 1;
-            this.label30.Text = "Sports Preferences";
             // 
             // label16
             // 
@@ -662,13 +676,10 @@
             // 
             // dob
             // 
-            this.dob.CalendarTodayDate = new System.DateTime(2024, 3, 25, 0, 0, 0, 0);
-            this.dob.Location = new System.Drawing.Point(337, 288);
-            this.dob.Margin = new System.Windows.Forms.Padding(2);
-            this.dob.Name = "dob";
-            this.dob.Size = new System.Drawing.Size(242, 30);
-            this.dob.TabIndex = 8;
-            this.dob.ValueChanged += new System.EventHandler(this.dob_ValueChanged);
+            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(430, 360);
+            this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
+            this.kryptonDateTimePicker2.Size = new System.Drawing.Size(323, 37);
+            this.kryptonDateTimePicker2.TabIndex = 8;
             // 
             // label25
             // 
@@ -717,28 +728,6 @@
             this.first.Size = new System.Drawing.Size(190, 31);
             this.first.TabIndex = 3;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.panel4.Controls.Add(this.label28);
-            this.panel4.Location = new System.Drawing.Point(337, 29);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(354, 80);
-            this.panel4.TabIndex = 2;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
-            this.label28.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(22, 20);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(318, 35);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Personal Information";
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -752,8 +741,7 @@
             // 
             // kryptonTextBox9
             // 
-            this.kryptonTextBox9.Location = new System.Drawing.Point(328, 1723);
-            this.kryptonTextBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox9.Location = new System.Drawing.Point(437, 3276);
             this.kryptonTextBox9.Multiline = true;
             this.kryptonTextBox9.Name = "kryptonTextBox9";
             this.kryptonTextBox9.Size = new System.Drawing.Size(475, 92);
@@ -762,8 +750,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(52, 2254);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(70, 3940);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(383, 318);
@@ -775,8 +762,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(77, 1723);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(103, 3276);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(245, 58);
             this.label15.TabIndex = 25;
@@ -784,8 +770,7 @@
             // 
             // kryptonTextBox8
             // 
-            this.kryptonTextBox8.Location = new System.Drawing.Point(328, 1630);
-            this.kryptonTextBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox8.Location = new System.Drawing.Point(437, 3160);
             this.kryptonTextBox8.Name = "kryptonTextBox8";
             this.kryptonTextBox8.Size = new System.Drawing.Size(264, 31);
             this.kryptonTextBox8.TabIndex = 24;
@@ -794,8 +779,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(77, 1630);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(103, 3160);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(229, 58);
             this.label14.TabIndex = 23;
@@ -804,8 +788,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(583, 1581);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(777, 3098);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 20);
             this.label12.TabIndex = 22;
@@ -813,8 +796,7 @@
             // 
             // kryptonTextBox6
             // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(586, 1533);
-            this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox6.Location = new System.Drawing.Point(782, 3038);
             this.kryptonTextBox6.Name = "kryptonTextBox6";
             this.kryptonTextBox6.Size = new System.Drawing.Size(199, 31);
             this.kryptonTextBox6.TabIndex = 21;
@@ -822,8 +804,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(324, 1581);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(432, 3098);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(86, 20);
             this.label13.TabIndex = 20;
@@ -831,8 +812,7 @@
             // 
             // kryptonTextBox7
             // 
-            this.kryptonTextBox7.Location = new System.Drawing.Point(328, 1533);
-            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox7.Location = new System.Drawing.Point(437, 3038);
             this.kryptonTextBox7.Name = "kryptonTextBox7";
             this.kryptonTextBox7.Size = new System.Drawing.Size(190, 31);
             this.kryptonTextBox7.TabIndex = 19;
@@ -841,8 +821,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(77, 1533);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(103, 3038);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(229, 58);
             this.label11.TabIndex = 18;
@@ -850,8 +829,7 @@
             // 
             // kryptonTextBox5
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(322, 1456);
-            this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox5.Location = new System.Drawing.Point(430, 2942);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
             this.kryptonTextBox5.Size = new System.Drawing.Size(264, 31);
             this.kryptonTextBox5.TabIndex = 17;
@@ -860,8 +838,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(77, 1456);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(103, 2942);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(183, 29);
             this.label10.TabIndex = 16;
@@ -869,8 +846,7 @@
             // 
             // kryptonTextBox4
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(322, 1381);
-            this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox4.Location = new System.Drawing.Point(430, 2848);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
             this.kryptonTextBox4.Size = new System.Drawing.Size(475, 31);
             this.kryptonTextBox4.TabIndex = 15;
@@ -879,8 +855,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(77, 1377);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(103, 2843);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 29);
             this.label9.TabIndex = 14;
@@ -888,8 +863,7 @@
             // 
             // kryptonTextBox3
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(322, 1234);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox3.Location = new System.Drawing.Point(430, 2664);
             this.kryptonTextBox3.Multiline = true;
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.Size = new System.Drawing.Size(475, 100);
@@ -900,8 +874,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(77, 1230);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(103, 2659);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 29);
             this.label8.TabIndex = 12;
@@ -910,8 +883,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(433, 1165);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton2.Location = new System.Drawing.Point(577, 2578);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(87, 24);
             this.radioButton2.TabIndex = 11;
@@ -922,8 +894,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(322, 1165);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton1.Location = new System.Drawing.Point(430, 2578);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(68, 24);
             this.radioButton1.TabIndex = 10;
@@ -935,8 +906,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(77, 1161);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(103, 2573);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 29);
             this.label7.TabIndex = 9;
@@ -944,19 +914,16 @@
             // 
             // kryptonDateTimePicker1
             // 
-            this.kryptonDateTimePicker1.CalendarTodayDate = new System.DateTime(2024, 3, 25, 0, 0, 0, 0);
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(322, 1066);
-            this.kryptonDateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(430, 2454);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(242, 30);
+            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(323, 37);
             this.kryptonDateTimePicker1.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(77, 1066);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(103, 2454);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(159, 29);
             this.label6.TabIndex = 7;
@@ -965,8 +932,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(578, 1000);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(770, 2372);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 6;
@@ -974,8 +940,7 @@
             // 
             // kryptonTextBox2
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(581, 952);
-            this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox2.Location = new System.Drawing.Point(775, 2312);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.Size = new System.Drawing.Size(199, 31);
             this.kryptonTextBox2.TabIndex = 5;
@@ -983,8 +948,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(319, 1000);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(425, 2372);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 4;
@@ -992,8 +956,7 @@
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(322, 952);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(430, 2312);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(190, 31);
             this.kryptonTextBox1.TabIndex = 3;
@@ -1002,8 +965,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(99)))), ((int)(((byte)(150)))));
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(313, 809);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(417, 2133);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(354, 80);
             this.panel2.TabIndex = 2;
@@ -1024,12 +986,67 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 948);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(103, 2307);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_33_49_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(858, -75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 392);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label35.Font = new System.Drawing.Font("Mongolian Baiti", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(409, 1859);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(349, 45);
+            this.label35.TabIndex = 40;
+            this.label35.Text = "Login Credentials";
+            // 
+            // kryptonTextBox10
+            // 
+            this.kryptonTextBox10.Location = new System.Drawing.Point(417, 1968);
+            this.kryptonTextBox10.Name = "kryptonTextBox10";
+            this.kryptonTextBox10.Size = new System.Drawing.Size(352, 39);
+            this.kryptonTextBox10.TabIndex = 42;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(112, 1968);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(181, 39);
+            this.label34.TabIndex = 41;
+            this.label34.Text = "User Name";
+            // 
+            // kryptonTextBox16
+            // 
+            this.kryptonTextBox16.Location = new System.Drawing.Point(417, 2040);
+            this.kryptonTextBox16.Name = "kryptonTextBox16";
+            this.kryptonTextBox16.Size = new System.Drawing.Size(352, 39);
+            this.kryptonTextBox16.TabIndex = 44;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(112, 2040);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(161, 39);
+            this.label36.TabIndex = 43;
+            this.label36.Text = "Password";
             // 
             // enrollment_form
             // 
@@ -1048,18 +1065,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
-            this.kryptonPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.SignupForm.ResumeLayout(false);
-            this.SignupForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ss)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -1071,9 +1082,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
@@ -1102,8 +1111,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox8;
         private System.Windows.Forms.GroupBox groupBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
-        private System.Windows.Forms.Panel SignupForm;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label16;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox cont;
@@ -1124,23 +1132,24 @@
         private System.Windows.Forms.Label label26;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox last;
         private System.Windows.Forms.Label label27;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox first;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label28;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox18;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label sport;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ss;
-        private System.Windows.Forms.Label skill;
-        private System.Windows.Forms.TextBox add;
-        private System.Windows.Forms.TextBox mc;
+        private System.Windows.Forms.Label label31;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label28;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
         private System.Windows.Forms.Label label33;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox16;
+        private System.Windows.Forms.Label label36;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox10;
         private System.Windows.Forms.Label label34;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox pass;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox user;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btologin;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton register;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.RadioButton Female;
-        private System.Windows.Forms.RadioButton Male;
+        private System.Windows.Forms.Label label35;
     }
 }

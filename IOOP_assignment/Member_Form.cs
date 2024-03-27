@@ -11,9 +11,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class Admin_Menu : KryptonForm
+    public partial class Member_Form : KryptonForm
     {
-        public Admin_Menu()
+        public Member_Form()
         {
             InitializeComponent();
             
@@ -23,33 +23,23 @@ namespace IOOP_assignment
             Application.Exit();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void add_payment_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Admin_Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void add_user_Click(object sender, EventArgs e)
-        {
-            add_user_type form1 = new add_user_type();
+            payments form1 = new payments();
             form1.Show();
             this.Hide();
         }
 
-        private void view_user_Click(object sender, EventArgs e)
+        private void unenrollment_button_Click(object sender, EventArgs e)
         {
-            view_user_type form2 = new view_user_type();
+            unenrollment_form form2 = new unenrollment_form();
             form2.Show();
             this.Hide();
         }
 
-        private void delete_user_Click(object sender, EventArgs e)
+        private void send_feedback_Click(object sender, EventArgs e)
         {
-            delete_user_type form3 = new delete_user_type();
+            member_feedback form3 = new member_feedback();
             form3.Show();
             this.Hide();
         }

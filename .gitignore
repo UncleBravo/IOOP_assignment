@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/IOOP_assignment/Coach_Menu.cs
+/IOOP_assignment/Coach_Menu.Designer.cs
+/IOOP_assignment/Coach_Menu.resx
+/IOOP_assignment/Coach_Menu.cs
+/.gitignore

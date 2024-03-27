@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +76,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_competition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_competition.Designer.cs">
+      <DependentUpon>add_competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_competition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_competition.Designer.cs">
+      <DependentUpon>delete_competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_member.Designer.cs">
+      <DependentUpon>delete_member.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_result.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +105,36 @@
     </Compile>
     <Compile Include="add_recommendation.Designer.cs">
       <DependentUpon>add_recommendation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_member.Designer.cs">
+      <DependentUpon>add_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_user_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_user_type.Designer.cs">
+      <DependentUpon>delete_user_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enrollment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enrollment_form.Designer.cs">
+      <DependentUpon>enrollment_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_user_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_user_type.Designer.cs">
+      <DependentUpon>view_user_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_user_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_user_type.Designer.cs">
+      <DependentUpon>add_user_type.cs</DependentUpon>
     </Compile>
     <Compile Include="member_feedback.cs">
       <SubType>Form</SubType>
@@ -139,18 +202,11 @@
     <Compile Include="Admin_Menu.Designer.cs">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Declaration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Declaration.Designer.cs">
       <DependentUpon>Declaration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="enrollment_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="enrollment_form.Designer.cs">
-      <DependentUpon>enrollment_form.cs</DependentUpon>
     </Compile>
     <Compile Include="loading_screen.cs">
       <SubType>Form</SubType>
@@ -166,11 +222,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add_competition.resx">
+      <DependentUpon>add_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_competition.resx">
+      <DependentUpon>delete_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_member.resx">
+      <DependentUpon>delete_member.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_result.resx">
       <DependentUpon>add_result.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_recommendation.resx">
       <DependentUpon>add_recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_member.resx">
+      <DependentUpon>add_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_user_type.resx">
+      <DependentUpon>delete_user_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enrollment_form.resx">
+      <DependentUpon>enrollment_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_user_type.resx">
+      <DependentUpon>view_user_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_user_type.resx">
+      <DependentUpon>add_user_type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="member_feedback.resx">
       <DependentUpon>member_feedback.cs</DependentUpon>
@@ -207,9 +287,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Declaration.resx">
       <DependentUpon>Declaration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="enrollment_form.resx">
-      <DependentUpon>enrollment_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loading_screen.resx">
       <DependentUpon>loading_screen.cs</DependentUpon>
@@ -365,6 +442,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp_Image_2024-03-26_at_11.27.29-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-management.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

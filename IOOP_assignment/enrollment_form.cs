@@ -18,17 +18,19 @@ namespace IOOP_assignment
             InitializeComponent();
         }
 
-        private void label30_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void kryptonButton1_Click(object sender, EventArgs e)
         {
-
+            Declaration form1 = new Declaration();
+            form1.Show();
+            this.Hide();
         }
 
-        private void label30_Click_1(object sender, EventArgs e)
+        private void kryptonButton2_Click(object sender, EventArgs e)
         {
 
         }

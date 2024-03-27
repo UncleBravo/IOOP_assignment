@@ -75,25 +75,6 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-OMT0039;Initial Catalog=userlogin;Integrated Security=True");
-            string query = "SELECT COUNT(*) FROM userlogin WHERE username=@username AND password=@password";
-            con.Open();
-            SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@username", user.Text);
-            cmd.Parameters.AddWithValue("@password", pass.Text);
-            int count = (int)cmd.ExecuteScalar();
-            con.Close();
-            if (count > 0)
-            {
-                MessageBox.Show("Login Successful", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            else
-            {
-                MessageBox.Show("Wrong credentials. Please try again.");
-            }
-
-        
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)

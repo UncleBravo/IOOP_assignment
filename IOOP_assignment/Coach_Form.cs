@@ -18,10 +18,6 @@ namespace IOOP_assignment
             InitializeComponent();
             
         }
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
@@ -73,6 +69,11 @@ namespace IOOP_assignment
             Comment form6 = new Comment();
             form6.Show();
             this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

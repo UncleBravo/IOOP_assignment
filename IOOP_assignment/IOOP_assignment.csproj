@@ -94,6 +94,30 @@
     <Compile Include="update_profile.Designer.cs">
       <DependentUpon>update_profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="view_payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_payments.Designer.cs">
+      <DependentUpon>view_payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_schedule.Designer.cs">
+      <DependentUpon>view_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_competition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_competition.Designer.cs">
+      <DependentUpon>view_competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_waiting_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_waiting_list.Designer.cs">
+      <DependentUpon>view_waiting_list.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +266,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="update_profile.resx">
       <DependentUpon>update_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_payments.resx">
+      <DependentUpon>view_payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_schedule.resx">
+      <DependentUpon>view_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_competition.resx">
+      <DependentUpon>view_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_waiting_list.resx">
+      <DependentUpon>view_waiting_list.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_users.resx">
       <DependentUpon>view_users.cs</DependentUpon>

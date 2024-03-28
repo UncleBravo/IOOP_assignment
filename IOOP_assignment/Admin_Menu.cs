@@ -64,5 +64,10 @@ namespace IOOP_assignment
             update_profile form1 = new update_profile();
             form1.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -236,6 +236,7 @@
             this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton2.TabIndex = 17;
             this.kryptonButton2.Values.Text = "BACK";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // add_competition
             // 

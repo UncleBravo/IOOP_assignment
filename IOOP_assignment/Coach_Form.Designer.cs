@@ -275,7 +275,6 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(313, 60);
             this.button16.TabIndex = 28;
-            this.button16.Text = "       View";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button16.UseVisualStyleBackColor = true;

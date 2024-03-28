@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.kryptonRadioButton1 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton2 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,12 +153,22 @@
             this.kryptonRadioButton2.TabIndex = 14;
             this.kryptonRadioButton2.Values.Text = "Lose";
             // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(218, 294);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton2.TabIndex = 15;
+            this.kryptonButton2.Values.Text = "BACK";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
+            // 
             // add_result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(956, 397);
+            this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonRadioButton2);
             this.Controls.Add(this.kryptonRadioButton1);
             this.Controls.Add(this.label4);
@@ -187,5 +198,6 @@
         private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

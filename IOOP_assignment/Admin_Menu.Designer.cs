@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PnlNav = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.update_details = new System.Windows.Forms.Button();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -87,7 +87,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(92)))), ((int)(((byte)(153)))));
             this.panel1.Controls.Add(this.PnlNav);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.update_details);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -105,21 +105,22 @@
             this.PnlNav.Size = new System.Drawing.Size(3, 100);
             this.PnlNav.TabIndex = 1;
             // 
-            // button5
+            // update_details
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 930);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(316, 98);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Update Profile";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button5.UseVisualStyleBackColor = true;
+            this.update_details.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.update_details.FlatAppearance.BorderSize = 0;
+            this.update_details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_details.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_details.ForeColor = System.Drawing.Color.White;
+            this.update_details.Location = new System.Drawing.Point(0, 930);
+            this.update_details.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update_details.Name = "update_details";
+            this.update_details.Size = new System.Drawing.Size(316, 98);
+            this.update_details.TabIndex = 6;
+            this.update_details.Text = "Update Profile";
+            this.update_details.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.update_details.UseVisualStyleBackColor = true;
+            this.update_details.Click += new System.EventHandler(this.update_details_Click);
             // 
             // kryptonPalette1
             // 
@@ -318,6 +319,7 @@
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // delete_user
             // 
@@ -623,7 +625,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button update_details;
         private System.Windows.Forms.Panel PnlNav;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panel3;

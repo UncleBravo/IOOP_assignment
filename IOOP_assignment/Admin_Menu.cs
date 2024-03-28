@@ -53,5 +53,16 @@ namespace IOOP_assignment
             form3.Show();
             this.Hide();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void update_details_Click(object sender, EventArgs e)
+        {
+            update_profile form1 = new update_profile();
+            form1.Show();
+        }
     }
 }

@@ -124,6 +124,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(27, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1058, 55);
@@ -241,11 +242,12 @@
             // 
             this.kryptonComboBox3.DropDownWidth = 278;
             this.kryptonComboBox3.Items.AddRange(new object[] {
-            "Beginner",
-            "Intermediate",
-            "Advanced",
+            "Beginner (Member)",
+            "Intermediate (Member)",
+            "Advanced (Member)",
+            "Administrator",
             "Coaching",
-            "Administrator"});
+            "Manager"});
             this.kryptonComboBox3.Location = new System.Drawing.Point(598, 1296);
             this.kryptonComboBox3.Name = "kryptonComboBox3";
             this.kryptonComboBox3.Size = new System.Drawing.Size(278, 37);

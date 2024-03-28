@@ -258,7 +258,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(313, 60);
             this.button19.TabIndex = 31;
-            this.button19.Text = "       Students";
+            this.button19.Text = "       Members";
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button19.UseVisualStyleBackColor = true;
@@ -518,7 +518,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::IOOP_assignment.Properties.Resources.graduated;
+            this.pictureBox14.Image = global::IOOP_assignment.Properties.Resources.team;
             this.pictureBox14.Location = new System.Drawing.Point(965, 356);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";

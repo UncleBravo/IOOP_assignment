@@ -69,9 +69,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_27_29_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(159, -178);
+            this.pictureBox1.Location = new System.Drawing.Point(52, -104);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1066, 1023);
+            this.pictureBox1.Size = new System.Drawing.Size(800, 818);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -80,18 +81,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 88);
+            this.label3.Location = new System.Drawing.Point(24, 70);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(273, 34);
+            this.label3.Size = new System.Drawing.Size(211, 25);
             this.label3.TabIndex = 12;
             this.label3.Text = "Reference Number";
             // 
             // user
             // 
-            this.user.Location = new System.Drawing.Point(20, 134);
-            this.user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.user.Location = new System.Drawing.Point(15, 107);
+            this.user.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(477, 49);
+            this.user.Size = new System.Drawing.Size(358, 40);
             this.user.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.user.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.user.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -108,22 +110,24 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(469, 223);
+            this.kryptonButton1.Location = new System.Drawing.Point(352, 178);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton1.Size = new System.Drawing.Size(79, 37);
             this.kryptonButton1.TabIndex = 13;
             this.kryptonButton1.Values.Text = "DELETE";
             // 
             // delete_schedule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(800, 304);
+            this.ClientSize = new System.Drawing.Size(600, 243);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.user);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "delete_schedule";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

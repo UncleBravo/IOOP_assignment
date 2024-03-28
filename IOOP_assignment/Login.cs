@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using System.Data.SqlClient;
+using System.Security.Cryptography.X509Certificates;
 
 namespace IOOP_assignment
 {
@@ -75,6 +76,7 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)

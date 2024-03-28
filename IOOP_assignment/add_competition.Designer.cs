@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.kryptonNumericUpDown1 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
             this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,12 +229,21 @@
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(330, 37);
             this.kryptonDateTimePicker1.TabIndex = 16;
             // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(218, 652);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton2.TabIndex = 17;
+            this.kryptonButton2.Values.Text = "BACK";
+            // 
             // add_competition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(956, 719);
+            this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonDateTimePicker1);
             this.Controls.Add(this.kryptonNumericUpDown1);
             this.Controls.Add(this.label5);
@@ -273,5 +283,6 @@
         private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

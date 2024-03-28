@@ -82,6 +82,12 @@
     <Compile Include="add_competition.Designer.cs">
       <DependentUpon>add_competition.cs</DependentUpon>
     </Compile>
+    <Compile Include="view_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_users.Designer.cs">
+      <DependentUpon>view_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="delete_competition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="add_competition.resx">
       <DependentUpon>add_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_users.resx">
+      <DependentUpon>view_users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delete_competition.resx">
       <DependentUpon>delete_competition.cs</DependentUpon>

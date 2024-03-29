@@ -11,18 +11,11 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class delete_competition : KryptonForm
+    public partial class view_payments : KryptonForm
     {
-        public delete_competition()
+        public view_payments()
         {
             InitializeComponent();
-        }
-
-        private void kryptonButton2_Click(object sender, EventArgs e)
-        {
-            Member_Form form1 = new Member_Form();
-            form1.Show();
-            this.Hide();
         }
     }
 }

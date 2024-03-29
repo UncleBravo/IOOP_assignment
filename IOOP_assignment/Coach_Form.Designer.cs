@@ -32,18 +32,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.PnlNav = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.add_recommendation = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -62,12 +59,13 @@
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -78,8 +76,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,17 +119,6 @@
             this.button5.Text = "Update Profile";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 37;
-            this.pictureBox6.TabStop = false;
             // 
             // kryptonPalette1
             // 
@@ -187,17 +176,6 @@
             this.label1.Size = new System.Drawing.Size(139, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Coach";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.coach1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -262,23 +240,6 @@
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(783, 268);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(313, 60);
-            this.button16.TabIndex = 28;
-            this.button16.Text = "       View";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button16.UseVisualStyleBackColor = true;
             // 
             // button22
             // 
@@ -527,16 +488,27 @@
             this.pictureBox14.TabIndex = 34;
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox11
+            // pictureBox1
             // 
-            this.pictureBox11.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
-            this.pictureBox11.Location = new System.Drawing.Point(965, 280);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(95, 38);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 28;
-            this.pictureBox11.TabStop = false;
+            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.coach1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
+            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 37;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -549,6 +521,33 @@
             this.pictureBox2.TabIndex = 82;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
+            this.pictureBox10.Location = new System.Drawing.Point(967, 282);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(95, 38);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 83;
+            this.pictureBox10.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
+            this.button1.Location = new System.Drawing.Point(783, 261);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(309, 76);
+            this.button1.TabIndex = 84;
+            this.button1.Text = "       View";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Coach_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -557,6 +556,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1567, 1028);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.add_comment);
             this.Controls.Add(this.pictureBox8);
@@ -576,11 +577,9 @@
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
-            this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -591,10 +590,8 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Coach_Menu_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -605,8 +602,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -621,11 +620,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button button22;
@@ -648,5 +645,7 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button button1;
     }
 }

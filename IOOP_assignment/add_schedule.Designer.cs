@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +127,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(672, 495);
+            this.kryptonButton1.Location = new System.Drawing.Point(597, 510);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton1.TabIndex = 6;
@@ -209,12 +210,22 @@
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(332, 37);
             this.kryptonDateTimePicker1.TabIndex = 13;
             // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(741, 510);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton2.TabIndex = 14;
+            this.kryptonButton2.Values.Text = "BACK";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
+            // 
             // add_schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(956, 568);
+            this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonDateTimePicker1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.kryptonTextBox3);
@@ -250,5 +261,6 @@
         private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

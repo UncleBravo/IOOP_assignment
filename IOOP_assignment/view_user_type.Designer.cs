@@ -33,11 +33,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonRadioButton1 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonRadioButton2 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonRadioButton3 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonRadioButton4 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -93,7 +92,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(82, 143);
+            this.kryptonButton1.Location = new System.Drawing.Point(68, 144);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton1.TabIndex = 6;
@@ -109,37 +108,28 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "User Type";
             // 
-            // kryptonRadioButton1
+            // kryptonComboBox1
             // 
-            this.kryptonRadioButton1.Location = new System.Drawing.Point(349, 77);
-            this.kryptonRadioButton1.Name = "kryptonRadioButton1";
-            this.kryptonRadioButton1.Size = new System.Drawing.Size(94, 37);
-            this.kryptonRadioButton1.TabIndex = 17;
-            this.kryptonRadioButton1.Values.Text = "Coach";
+            this.kryptonComboBox1.DropDownWidth = 268;
+            this.kryptonComboBox1.Items.AddRange(new object[] {
+            "Administrator",
+            "Coach",
+            "Manager",
+            "Member"});
+            this.kryptonComboBox1.Location = new System.Drawing.Point(253, 74);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.Size = new System.Drawing.Size(268, 37);
+            this.kryptonComboBox1.TabIndex = 21;
+            this.kryptonComboBox1.Text = "---- User Type ----";
             // 
-            // kryptonRadioButton2
+            // kryptonButton2
             // 
-            this.kryptonRadioButton2.Location = new System.Drawing.Point(468, 77);
-            this.kryptonRadioButton2.Name = "kryptonRadioButton2";
-            this.kryptonRadioButton2.Size = new System.Drawing.Size(124, 37);
-            this.kryptonRadioButton2.TabIndex = 18;
-            this.kryptonRadioButton2.Values.Text = "Manager";
-            // 
-            // kryptonRadioButton3
-            // 
-            this.kryptonRadioButton3.Location = new System.Drawing.Point(609, 77);
-            this.kryptonRadioButton3.Name = "kryptonRadioButton3";
-            this.kryptonRadioButton3.Size = new System.Drawing.Size(119, 37);
-            this.kryptonRadioButton3.TabIndex = 19;
-            this.kryptonRadioButton3.Values.Text = "Member";
-            // 
-            // kryptonRadioButton4
-            // 
-            this.kryptonRadioButton4.Location = new System.Drawing.Point(235, 77);
-            this.kryptonRadioButton4.Name = "kryptonRadioButton4";
-            this.kryptonRadioButton4.Size = new System.Drawing.Size(98, 37);
-            this.kryptonRadioButton4.TabIndex = 20;
-            this.kryptonRadioButton4.Values.Text = "Admin";
+            this.kryptonButton2.Location = new System.Drawing.Point(229, 144);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton2.TabIndex = 22;
+            this.kryptonButton2.Values.Text = "BACK";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // view_user_type
             // 
@@ -147,10 +137,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(945, 290);
-            this.Controls.Add(this.kryptonRadioButton4);
-            this.Controls.Add(this.kryptonRadioButton3);
-            this.Controls.Add(this.kryptonRadioButton2);
-            this.Controls.Add(this.kryptonRadioButton1);
+            this.Controls.Add(this.kryptonButton2);
+            this.Controls.Add(this.kryptonComboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.pictureBox1);
@@ -161,6 +149,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VIEW";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,9 +161,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton3;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton4;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

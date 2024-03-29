@@ -17,5 +17,12 @@ namespace IOOP_assignment
         {
             InitializeComponent();
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            Coach_Menu form1 = new Coach_Menu();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

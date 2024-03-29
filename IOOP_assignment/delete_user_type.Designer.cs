@@ -34,6 +34,7 @@
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
             this.user = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,12 +127,22 @@
             this.user.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             this.user.TabIndex = 15;
             // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(220, 208);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton2.TabIndex = 17;
+            this.kryptonButton2.Values.Text = "BACK";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
+            // 
             // delete_user_type
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(945, 353);
+            this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.user);
             this.Controls.Add(this.kryptonButton1);
@@ -155,5 +166,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox user;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

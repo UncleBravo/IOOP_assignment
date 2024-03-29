@@ -167,6 +167,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -552,7 +553,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_58_52_removebg_preview;
-            this.pictureBox8.Location = new System.Drawing.Point(740, 117);
+            this.pictureBox8.Location = new System.Drawing.Point(737, 149);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(827, 879);

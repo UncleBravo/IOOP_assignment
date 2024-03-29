@@ -18,5 +18,7 @@ namespace IOOP_assignment
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Member_Form());
         }
+
+        
     }
 }

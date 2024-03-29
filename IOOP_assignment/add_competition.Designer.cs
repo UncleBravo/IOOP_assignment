@@ -39,8 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.kryptonNumericUpDown1 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
             this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,7 +127,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(74, 652);
+            this.kryptonButton1.Location = new System.Drawing.Point(74, 559);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton1.TabIndex = 6;
@@ -205,23 +203,6 @@
             this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             this.kryptonTextBox3.TabIndex = 11;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(69, 517);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(336, 34);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Number of Participants";
-            // 
-            // kryptonNumericUpDown1
-            // 
-            this.kryptonNumericUpDown1.Location = new System.Drawing.Point(75, 577);
-            this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
-            this.kryptonNumericUpDown1.Size = new System.Drawing.Size(120, 38);
-            this.kryptonNumericUpDown1.TabIndex = 15;
-            // 
             // kryptonDateTimePicker1
             // 
             this.kryptonDateTimePicker1.Location = new System.Drawing.Point(74, 450);
@@ -231,7 +212,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(218, 652);
+            this.kryptonButton2.Location = new System.Drawing.Point(219, 559);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton2.TabIndex = 17;
@@ -243,11 +224,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(956, 719);
+            this.ClientSize = new System.Drawing.Size(948, 653);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonDateTimePicker1);
-            this.Controls.Add(this.kryptonNumericUpDown1);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.kryptonTextBox3);
             this.Controls.Add(this.label3);
@@ -281,8 +260,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }

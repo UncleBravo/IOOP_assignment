@@ -102,7 +102,7 @@ namespace IOOP_assignment
 
                 if (userRole == "Admin")
                 {
-                    Admin_Menu admin_Menu = new Admin_Menu(RefNo);
+                    Admin_Menu admin_Menu = new Admin_Menu(RefNo, UserName, Password);
                     admin_Menu.Show();
                 }
 
@@ -183,7 +183,7 @@ namespace IOOP_assignment
             // Implementation 
         }
        
-        public string update_user(string ref_no)
+        public string update_user(string ref_no, string username, string password)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -197,8 +197,8 @@ namespace IOOP_assignment
             {
                 SqlCommand cmdUpdate = new SqlCommand("UPDATE AllUsers SET Username = @username, Password = @password WHERE Refno = @refno", con);
                 cmdUpdate.Parameters.AddWithValue("@refno", ref_no);
-                cmdUpdate.Parameters.AddWithValue("@username", UserName);
-                cmdUpdate.Parameters.AddWithValue("@password", Password);
+                cmdUpdate.Parameters.AddWithValue("@username", username);
+                cmdUpdate.Parameters.AddWithValue("@password", password);
                 int rowaffected = cmdUpdate.ExecuteNonQuery();
 
                 if (rowaffected > 0)

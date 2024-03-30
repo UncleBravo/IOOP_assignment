@@ -13,17 +13,19 @@ namespace IOOP_assignment
 {
     public partial class Admin_Menu : KryptonForm
     {
-        private string ref_no;
+        private string ref_no, user_name, password;
         public Admin_Menu()
         {
             InitializeComponent();
             
         }
 
-        public Admin_Menu(string refno)
+        public Admin_Menu(string refno, string username, string password)
         {
             InitializeComponent();
             ref_no = refno;
+            user_name = username;
+            this.password = password;
 
         }
         private void button7_Click(object sender, EventArgs e)
@@ -70,7 +72,7 @@ namespace IOOP_assignment
 
         private void update_details_Click(object sender, EventArgs e)
         {
-            update_profile form1 = new update_profile(ref_no);
+            update_profile form1 = new update_profile(ref_no, user_name, password);
             form1.Show();
 
         }

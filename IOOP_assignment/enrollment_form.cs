@@ -33,7 +33,7 @@ namespace IOOP_assignment
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             string status;
-            User obj1 = User();
+            User obj1 = User(refno,);
         }
 
         private void kryptonTextBox5_TextChanged(object sender, EventArgs e)

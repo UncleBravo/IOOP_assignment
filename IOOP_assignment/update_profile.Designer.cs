@@ -84,7 +84,7 @@
             // 
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_27_29_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(118, -105);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(876, 723);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,7 +94,7 @@
             // user
             // 
             this.user.Location = new System.Drawing.Point(42, 82);
-            this.user.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user.Margin = new System.Windows.Forms.Padding(2);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(358, 40);
             this.user.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -114,7 +114,7 @@
             // kryptonButton1
             // 
             this.kryptonButton1.Location = new System.Drawing.Point(56, 241);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(79, 37);
             this.kryptonButton1.TabIndex = 6;
@@ -146,7 +146,7 @@
             // kryptonTextBox3
             // 
             this.kryptonTextBox3.Location = new System.Drawing.Point(42, 173);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.Size = new System.Drawing.Size(358, 40);
             this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -175,7 +175,7 @@
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.user);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "update_profile";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

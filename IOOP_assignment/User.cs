@@ -97,7 +97,7 @@ namespace IOOP_assignment
 
                 if (userRole == "Admin")
                 {
-                    Admin_Menu admin_Menu = new Admin_Menu();
+                    Admin_Menu admin_Menu = new Admin_Menu(RefNo);
                     admin_Menu.Show();
                 }
 

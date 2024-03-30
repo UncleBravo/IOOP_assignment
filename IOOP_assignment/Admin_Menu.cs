@@ -18,6 +18,13 @@ namespace IOOP_assignment
             InitializeComponent();
             
         }
+
+        public Admin_Menu(string refno)
+        {
+            InitializeComponent();
+            string ref_no = refno;
+
+        }
         private void button7_Click(object sender, EventArgs e)
         {
             Application.Exit();

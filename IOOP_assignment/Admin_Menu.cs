@@ -13,6 +13,7 @@ namespace IOOP_assignment
 {
     public partial class Admin_Menu : KryptonForm
     {
+        private string ref_no;
         public Admin_Menu()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace IOOP_assignment
         public Admin_Menu(string refno)
         {
             InitializeComponent();
-            string ref_no = refno;
+            ref_no = refno;
 
         }
         private void button7_Click(object sender, EventArgs e)

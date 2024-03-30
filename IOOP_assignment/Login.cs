@@ -78,12 +78,13 @@ namespace IOOP_assignment
         {
             string status;
             User obj1 = new User(user.Text, pass.Text);
-            status = obj1.Login(user.Text, pass.Text);
+            status = obj1.Login();
             if (status != null)
             {
-                MessageBox.Show("Status");
+                MessageBox.Show(status);
 
             }
+            
 
         }
 

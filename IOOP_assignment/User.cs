@@ -38,7 +38,7 @@ namespace IOOP_assignment
            
         }
 
-        public string Login(string username, string password)
+        public string Login()
         {
             string status = null;
 
@@ -46,17 +46,17 @@ namespace IOOP_assignment
             con.Open();
 
             SqlCommand cmd = new SqlCommand("select count(*) from AllUsers where RefNo=@a and password =@p", con);
-            cmd.Parameters.AddWithValue("@a", username);
-            cmd.Parameters.AddWithValue("@p", password);
+            cmd.Parameters.AddWithValue("@a", Username);
+            cmd.Parameters.AddWithValue("@p", Password);
 
 
             int count = Convert.ToInt32(cmd.ExecuteScalar());
 
             if (count > 0)
             {
-                SqlCommand cmd2 = new SqlCommand("select role from AllUsers where RefNo =@a and password =@p", con);
-                cmd2.Parameters.AddWithValue("@a", username);
-                cmd2.Parameters.AddWithValue("@p", password);
+                SqlCommand cmd2 = new SqlCommand("select UserType from AllUsers where RefNo =@a and password =@p", con);
+                cmd2.Parameters.AddWithValue("@a", Username);
+                cmd2.Parameters.AddWithValue("@p", Password);
 
                 string userRole = cmd2.ExecuteScalar().ToString();
 

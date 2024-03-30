@@ -68,6 +68,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.kryptonTextBox9 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -135,6 +137,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.kryptonTextBox9);
+            this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.kryptonButton2);
             this.panel1.Controls.Add(this.kryptonButton1);
             this.panel1.Controls.Add(this.kryptonTextBox7);
@@ -178,7 +182,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1186, 1720);
+            this.kryptonButton2.Location = new System.Drawing.Point(1182, 1818);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.Size = new System.Drawing.Size(197, 63);
             this.kryptonButton2.TabIndex = 40;
@@ -187,7 +191,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(906, 1720);
+            this.kryptonButton1.Location = new System.Drawing.Point(902, 1818);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(197, 63);
             this.kryptonButton1.TabIndex = 39;
@@ -494,6 +498,23 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "PERSONAL INFORMATION";
             // 
+            // kryptonTextBox9
+            // 
+            this.kryptonTextBox9.Location = new System.Drawing.Point(598, 1694);
+            this.kryptonTextBox9.Name = "kryptonTextBox9";
+            this.kryptonTextBox9.Size = new System.Drawing.Size(340, 39);
+            this.kryptonTextBox9.TabIndex = 43;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(93, 1690);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(269, 33);
+            this.label20.TabIndex = 42;
+            this.label20.Text = "Reference Number ";
+            // 
             // enrollment_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -562,5 +583,7 @@
         private System.Windows.Forms.Label label16;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
+        private System.Windows.Forms.Label label20;
     }
 }

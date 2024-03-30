@@ -70,8 +70,9 @@ namespace IOOP_assignment
 
         private void update_details_Click(object sender, EventArgs e)
         {
-            update_profile form1 = new update_profile();
+            update_profile form1 = new update_profile(ref_no);
             form1.Show();
+
         }
 
         private void button1_Click(object sender, EventArgs e)

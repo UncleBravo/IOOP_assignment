@@ -177,10 +177,39 @@ namespace IOOP_assignment
         {
             // Implementation 
         }
-        public void UpdateProfile(string newUsername, string newPassword)
+       
+        public string update_user(string ref_no)
         {
-            // Implementation 
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from AllUsers where RefNo=@username", con);
+            cmdCheck.Parameters.AddWithValue("@username", ref_no);
+
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE AllUsers SET Username = @username, Password = @password WHERE Refno = @refno", con);
+                cmdUpdate.Parameters.AddWithValue("@refno", ref_no);
+                cmdUpdate.Parameters.AddWithValue("@username", UserName);
+                cmdUpdate.Parameters.AddWithValue("@password", Password);
+                int rowaffected = cmdUpdate.ExecuteNonQuery();
+
+                if (rowaffected > 0)
+                    status = "Details updated sucessfully";
+                else
+                    status = "Process failed. Please try again";
+            }
+
+            else
+            {
+                status = "User doesn't exist. Please try again.";
+            }
+            con.Close();
+            return status;
         }
+         
 
 
 

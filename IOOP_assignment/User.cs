@@ -48,6 +48,11 @@ namespace IOOP_assignment
 
         }
 
+        public User(string refno)
+        {
+            RefNo = refno;
+        }
+
         public User(string refno, string password)
         {
             RefNo = refno;

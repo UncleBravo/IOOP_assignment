@@ -27,7 +27,8 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-
+            User obj1 = new User(ref_no);
+            obj1.update_user(ref_no);
         }
     }
 }

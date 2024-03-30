@@ -32,7 +32,8 @@ namespace IOOP_assignment
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-
+            string status;
+            User obj1 = User();
         }
     }
 }

@@ -42,7 +42,7 @@ namespace IOOP_assignment
 
         private void view_user_Click(object sender, EventArgs e)
         {
-            view_user_type form2 = new view_user_type();
+            view_user form2 = new view_user();
             form2.Show();
             this.Hide();
 

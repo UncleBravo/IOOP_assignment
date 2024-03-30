@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.waitlist = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waitlist)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -80,39 +80,42 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.kryptonDataGridView1);
+            this.panel1.Controls.Add(this.waitlist);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1466, 1008);
+            this.panel1.Size = new System.Drawing.Size(1100, 806);
             this.panel1.TabIndex = 9;
             // 
-            // kryptonDataGridView1
+            // waitlist
             // 
-            this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.RowHeadersWidth = 82;
-            this.kryptonDataGridView1.RowTemplate.Height = 33;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(1466, 1008);
-            this.kryptonDataGridView1.TabIndex = 0;
+            this.waitlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.waitlist.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.waitlist.Location = new System.Drawing.Point(0, 0);
+            this.waitlist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.waitlist.Name = "waitlist";
+            this.waitlist.RowHeadersWidth = 82;
+            this.waitlist.RowTemplate.Height = 33;
+            this.waitlist.Size = new System.Drawing.Size(1100, 806);
+            this.waitlist.TabIndex = 0;
             // 
-            // view_user
+            // view_waiting_list
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1466, 1008);
+            this.ClientSize = new System.Drawing.Size(1100, 806);
             this.Controls.Add(this.panel1);
-            this.Name = "view_user";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "view_waiting_list";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VIEW USER";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waitlist)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,6 +124,6 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView waitlist;
     }
 }

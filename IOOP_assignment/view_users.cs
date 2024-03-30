@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +18,17 @@ namespace IOOP_assignment
         public view_user()
         {
             InitializeComponent();
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM AllUsers", con);
+            DataTable dtbl = new DataTable();
+            sqlDa.Fill(dtbl);
+
+
+            con.Close();
+            user_table.DataSource = dtbl;
+
         }
     }
 }

@@ -12,6 +12,7 @@ namespace IOOP_assignment
 {
     internal class Admin : User
     {
+        public Admin() { }
         public Admin(string ref_no)
         {
             RefNo = ref_no;

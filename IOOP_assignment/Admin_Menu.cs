@@ -45,6 +45,7 @@ namespace IOOP_assignment
             view_user_type form2 = new view_user_type();
             form2.Show();
             this.Hide();
+
         }
 
         private void delete_user_Click(object sender, EventArgs e)
@@ -68,6 +69,11 @@ namespace IOOP_assignment
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

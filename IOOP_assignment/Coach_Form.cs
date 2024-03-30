@@ -75,5 +75,41 @@ namespace IOOP_assignment
         {
             Application.Exit();
         }
+
+        private void coach_view_Click(object sender, EventArgs e)
+        {
+            view_schedule form7 = new view_schedule();
+            form7.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            view_competition form8 = new view_competition();
+            form8.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            view_participants form9 = new view_participants();
+            form9.Show();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            view_results form10 = new view_results();
+            form10.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            view_participants form11 = new view_participants();
+            form11.Show();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            view_fees form12 = new view_fees();
+            form12.Show();
+        }
     }
 }

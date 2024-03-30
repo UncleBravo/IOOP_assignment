@@ -140,7 +140,7 @@ namespace IOOP_assignment
                 status = "User always exists";
             else
             {
-                SqlCommand cmdInsert = new SqlCommand("Insert into AllUsers (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);
+                SqlCommand cmdInsert = new SqlCommand("Insert into Waiting_List (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);
 
                 cmdInsert.Parameters.AddWithValue("@r", ref_no);
                 cmdInsert.Parameters.AddWithValue("@utype", role);

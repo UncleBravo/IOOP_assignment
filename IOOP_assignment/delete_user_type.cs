@@ -24,5 +24,16 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Admin obj1 = new Admin(refno.Text);
+            status = obj1.delete_user(refno.Text);
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+        }
     }
 }

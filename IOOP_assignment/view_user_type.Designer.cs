@@ -83,28 +83,32 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_11_27_29__1__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(193, -117);
+            this.pictureBox1.Location = new System.Drawing.Point(145, -94);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1168, 904);
+            this.pictureBox1.Size = new System.Drawing.Size(876, 723);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(68, 144);
+            this.kryptonButton1.Location = new System.Drawing.Point(51, 115);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton1.Size = new System.Drawing.Size(79, 37);
             this.kryptonButton1.TabIndex = 6;
             this.kryptonButton1.Values.Text = "VIEW";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 77);
+            this.label1.Location = new System.Drawing.Point(46, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 34);
+            this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "User Type";
             // 
@@ -116,32 +120,35 @@
             "Coach",
             "Manager",
             "Member"});
-            this.kryptonComboBox1.Location = new System.Drawing.Point(253, 74);
+            this.kryptonComboBox1.Location = new System.Drawing.Point(190, 59);
+            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(268, 37);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(201, 29);
             this.kryptonComboBox1.TabIndex = 21;
             this.kryptonComboBox1.Text = "---- User Type ----";
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(229, 144);
+            this.kryptonButton2.Location = new System.Drawing.Point(172, 115);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(105, 46);
+            this.kryptonButton2.Size = new System.Drawing.Size(79, 37);
             this.kryptonButton2.TabIndex = 22;
             this.kryptonButton2.Values.Text = "BACK";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // view_user_type
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(945, 290);
+            this.ClientSize = new System.Drawing.Size(709, 232);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonComboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "view_user_type";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

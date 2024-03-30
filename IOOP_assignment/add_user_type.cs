@@ -24,5 +24,12 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+
+
+        }
     }
 }

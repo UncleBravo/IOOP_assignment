@@ -90,10 +90,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.Screenshot_2024_03_22_at_15_44_58_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(-31, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-41, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(278, 632);
+            this.pictureBox1.Size = new System.Drawing.Size(371, 790);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -101,10 +101,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::IOOP_assignment.Properties.Resources.Screenshot_2024_03_22_at_15_47_54_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(676, -55);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(901, -69);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(290, 632);
+            this.pictureBox2.Size = new System.Drawing.Size(387, 790);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -112,20 +112,20 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_22_at_18_56_53_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(260, -65);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(347, -81);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(411, 459);
+            this.pictureBox3.Size = new System.Drawing.Size(548, 574);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
             // pass
             // 
-            this.pass.Location = new System.Drawing.Point(299, 380);
-            this.pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pass.Location = new System.Drawing.Point(399, 475);
+            this.pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(329, 40);
+            this.pass.Size = new System.Drawing.Size(439, 49);
             this.pass.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.pass.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pass.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -145,10 +145,10 @@
             // 
             // user
             // 
-            this.user.Location = new System.Drawing.Point(299, 326);
-            this.user.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user.Location = new System.Drawing.Point(399, 408);
+            this.user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(329, 40);
+            this.user.Size = new System.Drawing.Size(439, 49);
             this.user.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.user.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.user.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -163,13 +163,14 @@
             this.user.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             this.user.TabIndex = 3;
             this.user.Text = "Enter Your E-Mail Address";
+            this.user.TextChanged += new System.EventHandler(this.user_TextChanged);
             this.user.Enter += new System.EventHandler(this.email_TxtBox_Enter);
             this.user.Leave += new System.EventHandler(this.email_TxtBox_Leave);
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(299, 494);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButton1.Location = new System.Drawing.Point(399, 618);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -185,7 +186,7 @@
             this.kryptonButton1.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton1.OverrideDefault.Border.Width = 1;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(134, 58);
+            this.kryptonButton1.Size = new System.Drawing.Size(179, 72);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -230,8 +231,8 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(461, 494);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButton2.Location = new System.Drawing.Point(615, 618);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -247,7 +248,7 @@
             this.kryptonButton2.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton2.OverrideDefault.Border.Width = 1;
             this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(170, 58);
+            this.kryptonButton2.Size = new System.Drawing.Size(227, 72);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.kryptonButton2.StateCommon.Back.ColorAngle = 45F;
@@ -293,10 +294,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(299, 434);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Location = new System.Drawing.Point(399, 542);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(148, 24);
+            this.checkBox1.Size = new System.Drawing.Size(197, 29);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -304,10 +305,10 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(960, 633);
+            this.ClientSize = new System.Drawing.Size(1280, 791);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton1);
@@ -316,7 +317,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

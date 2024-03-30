@@ -70,7 +70,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.role = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -145,7 +144,6 @@
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.role);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.refno);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.kryptonButton2);
@@ -540,15 +538,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "PERSONAL INFORMATION";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(1076, 1729);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(431, 419);
-            this.groupBox1.TabIndex = 44;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -648,6 +637,5 @@
         private System.Windows.Forms.Label label20;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox role;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

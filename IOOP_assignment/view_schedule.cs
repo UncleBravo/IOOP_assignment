@@ -21,13 +21,13 @@ namespace IOOP_assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM TrainingSchedule", con);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Feedback", con);
             DataTable dtbl = new DataTable();
             sqlDa.Fill(dtbl);
 
 
             con.Close();
-            sch.DataSource = dtbl;
+            feed.DataSource = dtbl;
         }
     }
 }

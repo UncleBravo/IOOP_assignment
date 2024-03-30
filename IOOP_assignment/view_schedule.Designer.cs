@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.sch = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.feed = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feed)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -80,25 +80,25 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.sch);
+            this.panel1.Controls.Add(this.feed);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1100, 806);
             this.panel1.TabIndex = 9;
             // 
-            // sch
+            // feed
             // 
-            this.sch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sch.Location = new System.Drawing.Point(0, 0);
-            this.sch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.sch.Name = "sch";
-            this.sch.RowHeadersWidth = 82;
-            this.sch.RowTemplate.Height = 33;
-            this.sch.Size = new System.Drawing.Size(1100, 806);
-            this.sch.TabIndex = 0;
+            this.feed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.feed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.feed.Location = new System.Drawing.Point(0, 0);
+            this.feed.Margin = new System.Windows.Forms.Padding(2);
+            this.feed.Name = "feed";
+            this.feed.RowHeadersWidth = 82;
+            this.feed.RowTemplate.Height = 33;
+            this.feed.Size = new System.Drawing.Size(1100, 806);
+            this.feed.TabIndex = 0;
             // 
             // view_schedule
             // 
@@ -107,14 +107,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1100, 806);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "view_schedule";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.Text = "SCHEDULES";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feed)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,6 +123,6 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView sch;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView feed;
     }
 }

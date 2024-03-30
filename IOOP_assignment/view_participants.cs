@@ -21,13 +21,13 @@ namespace IOOP_assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Waiting_List", con);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Participants", con);
             DataTable dtbl = new DataTable();
             sqlDa.Fill(dtbl);
 
 
             con.Close();
-            waitlist.DataSource = dtbl;
+            part.DataSource = dtbl;
         }
     }
 }

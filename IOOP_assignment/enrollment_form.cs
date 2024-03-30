@@ -35,5 +35,10 @@ namespace IOOP_assignment
             string status;
             User obj1 = User();
         }
+
+        private void kryptonTextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -76,7 +76,15 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            
+            string status;
+            User obj1 = new User(user.Text, pass.Text);
+            status = obj1.Login(user.Text, pass.Text);
+            if (status != null)
+            {
+                MessageBox.Show("Status");
+
+            }
+
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)

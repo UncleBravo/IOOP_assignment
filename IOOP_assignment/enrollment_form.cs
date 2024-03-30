@@ -33,7 +33,13 @@ namespace IOOP_assignment
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             string status;
-            User obj1 = User(refno,);
+            User obj1 = new User(refno.Text, role.Text, fname.Text, lname.Text, dob.Text, gen.Text, add.Text, email.Text,Convert.ToInt32(pn.Text), ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
+            status = obj1.Signup(refno.Text, role.Text, fname.Text, lname.Text, dob.Text, gen.Text, add.Text, email.Text, Convert.ToInt32(pn.Text), ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
+            if (status != null) 
+            {
+                MessageBox.Show(status);
+            
+            }
         }
 
         private void kryptonTextBox5_TextChanged(object sender, EventArgs e)

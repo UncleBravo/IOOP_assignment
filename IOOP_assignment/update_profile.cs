@@ -13,14 +13,16 @@ namespace IOOP_assignment
 {
     public partial class update_profile : KryptonForm
     {
+        private string ref_no;
         public update_profile()
         {
             InitializeComponent();
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        public update_profile(string refno)
         {
-
+            InitializeComponent();
+            ref_no = refno;
         }
     }
 }

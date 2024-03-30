@@ -55,7 +55,6 @@
             this.email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.add = new System.Windows.Forms.TextBox();
             this.gen = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.dob = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -67,7 +66,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -165,7 +163,6 @@
             this.panel1.Controls.Add(this.email);
             this.panel1.Controls.Add(this.add);
             this.panel1.Controls.Add(this.gen);
-            this.panel1.Controls.Add(this.dob);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.lname);
@@ -177,7 +174,6 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -394,14 +390,6 @@
             this.gen.TabIndex = 21;
             this.gen.Text = "--- Select Gender ---";
             // 
-            // dob
-            // 
-            this.dob.Location = new System.Drawing.Point(597, 308);
-            this.dob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dob.Name = "dob";
-            this.dob.Size = new System.Drawing.Size(383, 37);
-            this.dob.TabIndex = 20;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -508,16 +496,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Gender";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(93, 308);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 33);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Date of Birth";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -610,7 +588,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox mc;
@@ -620,7 +597,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox email;
         private System.Windows.Forms.TextBox add;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox gen;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dob;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox sport;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

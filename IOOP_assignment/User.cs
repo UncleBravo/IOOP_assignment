@@ -26,8 +26,6 @@ namespace IOOP_assignment
 
         public string LastName { get; set; }
 
-        public string DOB { get; set; }
-
         public string Gender { get; set; }
 
         public string Address { get; set; }
@@ -62,7 +60,6 @@ namespace IOOP_assignment
             this.role = role;
             FirstName = first_name;
             LastName = last_name;
-            DOB = dob;
             Gender = gender;
             Address = address;
             Email = email;
@@ -129,7 +126,7 @@ namespace IOOP_assignment
             return status;
         }
 
-        public string Signup(string ref_no, string role, string first_name, string last_name, string dob, string gender, string address, string email, int contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
+        public string Signup(string ref_no, string role, string first_name, string last_name, string gender, string address, string email, int contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -143,13 +140,12 @@ namespace IOOP_assignment
                 status = "User always exists";
             else
             {
-                SqlCommand cmdInsert = new SqlCommand("Insert into AllUsers (RefNo, UserType, Fname, Lname, DOB, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @dob, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);
+                SqlCommand cmdInsert = new SqlCommand("Insert into AllUsers (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);
 
                 cmdInsert.Parameters.AddWithValue("@r", ref_no);
                 cmdInsert.Parameters.AddWithValue("@utype", role);
                 cmdInsert.Parameters.AddWithValue("@f", first_name);
                 cmdInsert.Parameters.AddWithValue("@l", last_name);
-                cmdInsert.Parameters.AddWithValue("@dob", dob);
                 cmdInsert.Parameters.AddWithValue("@g", gender);
                 cmdInsert.Parameters.AddWithValue("@a", address);
                 cmdInsert.Parameters.AddWithValue("@em", email);

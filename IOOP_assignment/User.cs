@@ -20,7 +20,7 @@ namespace IOOP_assignment
         public string Password { get; set; }
         public string Email { get; set; }
         public string name { get; set; }
-        public int Contact { get; set; }
+        public string Contact { get; set; }
 
         public string FirstName { get; set; }
 
@@ -54,7 +54,7 @@ namespace IOOP_assignment
             Password = password;  
         }
 
-        public User(string ref_no, string role, string first_name, string last_name, string gender, string address, string email, int contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
+        public User(string ref_no, string role, string first_name, string last_name, string gender, string address, string email, string contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
         {
             RefNo = ref_no;
             this.role = role;
@@ -126,7 +126,7 @@ namespace IOOP_assignment
             return status;
         }
 
-        public string Signup(string ref_no, string role, string first_name, string last_name, string gender, string address, string email, int contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
+        public string Signup(string ref_no, string role, string first_name, string last_name, string gender, string address, string email, string contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());

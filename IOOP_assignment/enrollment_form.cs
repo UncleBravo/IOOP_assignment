@@ -26,8 +26,8 @@ namespace IOOP_assignment
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             string status;
-            User obj1 = new User(refno.Text, role.Text, fname.Text, lname.Text, gen.Text, add.Text, email.Text, Convert.ToInt32(pn.Text), ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
-            status = obj1.Signup(refno.Text, role.Text, fname.Text, lname.Text, gen.Text, add.Text, email.Text, Convert.ToInt32(pn.Text), ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
+            User obj1 = new User(refno.Text, role.Text, fname.Text, lname.Text, gen.Text, add.Text, email.Text, pn.Text, ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
+            status = obj1.Signup(refno.Text, role.Text, fname.Text, lname.Text, gen.Text, add.Text, email.Text, pn.Text, ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
             if (status != null)
             {
                 MessageBox.Show(status);

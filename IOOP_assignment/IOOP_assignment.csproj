@@ -104,6 +104,24 @@
       <DependentUpon>update_profile.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="view_recommendation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_recommendation.Designer.cs">
+      <DependentUpon>view_recommendation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_comment.Designer.cs">
+      <DependentUpon>view_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_feedback.Designer.cs">
+      <DependentUpon>view_feedback.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_payments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +139,12 @@
     </Compile>
     <Compile Include="view_competition.Designer.cs">
       <DependentUpon>view_competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_participants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_participants.Designer.cs">
+      <DependentUpon>view_participants.cs</DependentUpon>
     </Compile>
     <Compile Include="view_waiting_list.cs">
       <SubType>Form</SubType>
@@ -277,6 +301,15 @@
     <EmbeddedResource Include="update_profile.resx">
       <DependentUpon>update_profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view_recommendation.resx">
+      <DependentUpon>view_recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_comment.resx">
+      <DependentUpon>view_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_feedback.resx">
+      <DependentUpon>view_feedback.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view_payments.resx">
       <DependentUpon>view_payments.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view_competition.resx">
       <DependentUpon>view_competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_participants.resx">
+      <DependentUpon>view_participants.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_waiting_list.resx">
       <DependentUpon>view_waiting_list.cs</DependentUpon>

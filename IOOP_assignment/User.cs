@@ -54,7 +54,7 @@ namespace IOOP_assignment
             Password = password;  
         }
 
-        public User(string ref_no, string role, string first_name, string last_name, string dob, string gender, string address, string email, int contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
+        public User(string ref_no, string role, string first_name, string last_name, string gender, string address, string email, int contact, string emn, string emc, string mc, string sport, string skill, string user, string pass)
         {
             RefNo = ref_no;
             this.role = role;

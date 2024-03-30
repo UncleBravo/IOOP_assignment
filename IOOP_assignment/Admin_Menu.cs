@@ -75,5 +75,48 @@ namespace IOOP_assignment
         {
            
         }
+
+        private void waiting_list_button_Click(object sender, EventArgs e)
+        {
+            view_waiting_list form4 = new view_waiting_list();
+            form4.Show();
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            view_competition form5 = new view_competition();
+            form5.Show();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            view_monthly form8 = new view_monthly();
+            form8.Show();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            view_feedback form6 = new view_feedback();
+            form6.Show();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            view_results form7 = new view_results();
+            form7.Show();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            view_salaries form9 = new view_salaries();
+            form9.Show();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            view_fees form10 = new view_fees();
+            form10.Show();
+        }
     }
 }

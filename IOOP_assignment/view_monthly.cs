@@ -13,21 +13,21 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class view_schedule : KryptonForm
+    public partial class view_monthly : KryptonForm
     {
-        public view_schedule()
+        public view_monthly()
         {
             InitializeComponent();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM TrainingSchedule", con);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM MonthlyIncome", con);
             DataTable dtbl = new DataTable();
             sqlDa.Fill(dtbl);
 
 
             con.Close();
-            schedule.DataSource = dtbl;
+            monthly_salary.DataSource = dtbl;
         }
     }
 }

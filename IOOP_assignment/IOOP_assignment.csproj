@@ -104,6 +104,18 @@
       <DependentUpon>update_profile.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="view_fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_fees.Designer.cs">
+      <DependentUpon>view_fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_salaries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_salaries.Designer.cs">
+      <DependentUpon>view_salaries.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_recommendation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     <Compile Include="view_payments.Designer.cs">
       <DependentUpon>view_payments.cs</DependentUpon>
     </Compile>
+    <Compile Include="view_monthly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_monthly.Designer.cs">
+      <DependentUpon>view_monthly.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_schedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +163,12 @@
     </Compile>
     <Compile Include="view_participants.Designer.cs">
       <DependentUpon>view_participants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_results.Designer.cs">
+      <DependentUpon>view_results.cs</DependentUpon>
     </Compile>
     <Compile Include="view_waiting_list.cs">
       <SubType>Form</SubType>
@@ -301,6 +325,12 @@
     <EmbeddedResource Include="update_profile.resx">
       <DependentUpon>update_profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view_fees.resx">
+      <DependentUpon>view_fees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_salaries.resx">
+      <DependentUpon>view_salaries.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view_recommendation.resx">
       <DependentUpon>view_recommendation.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +343,9 @@
     <EmbeddedResource Include="view_payments.resx">
       <DependentUpon>view_payments.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view_monthly.resx">
+      <DependentUpon>view_monthly.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view_schedule.resx">
       <DependentUpon>view_schedule.cs</DependentUpon>
     </EmbeddedResource>
@@ -321,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view_participants.resx">
       <DependentUpon>view_participants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_results.resx">
+      <DependentUpon>view_results.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_waiting_list.resx">
       <DependentUpon>view_waiting_list.cs</DependentUpon>

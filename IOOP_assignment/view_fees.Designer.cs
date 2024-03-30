@@ -1,6 +1,6 @@
 ﻿namespace IOOP_assignment
 {
-    partial class view_feedback
+    partial class view_fees
     {
         /// <summary>
         /// Required designer variable.
@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.waitlist = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.Fees = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.waitlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fees)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -80,7 +80,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.waitlist);
+            this.panel1.Controls.Add(this.Fees);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -88,19 +88,19 @@
             this.panel1.Size = new System.Drawing.Size(1467, 1008);
             this.panel1.TabIndex = 9;
             // 
-            // waitlist
+            // Fees
             // 
-            this.waitlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.waitlist.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.waitlist.Location = new System.Drawing.Point(0, 0);
-            this.waitlist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.waitlist.Name = "waitlist";
-            this.waitlist.RowHeadersWidth = 82;
-            this.waitlist.RowTemplate.Height = 33;
-            this.waitlist.Size = new System.Drawing.Size(1467, 1008);
-            this.waitlist.TabIndex = 0;
+            this.Fees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Fees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Fees.Location = new System.Drawing.Point(0, 0);
+            this.Fees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fees.Name = "Fees";
+            this.Fees.RowHeadersWidth = 82;
+            this.Fees.RowTemplate.Height = 33;
+            this.Fees.Size = new System.Drawing.Size(1467, 1008);
+            this.Fees.TabIndex = 0;
             // 
-            // view_feedback
+            // view_fees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,14 +108,14 @@
             this.ClientSize = new System.Drawing.Size(1467, 1008);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "view_feedback";
+            this.Name = "view_fees";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FEEDBACK";
+            this.Text = "FEES";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.waitlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fees)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,6 +124,6 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView waitlist;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView Fees;
     }
 }

@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.feed = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.schedule = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.feed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedule)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -80,41 +80,41 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.feed);
+            this.panel1.Controls.Add(this.schedule);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 806);
+            this.panel1.Size = new System.Drawing.Size(1467, 1008);
             this.panel1.TabIndex = 9;
             // 
-            // feed
+            // schedule
             // 
-            this.feed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.feed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.feed.Location = new System.Drawing.Point(0, 0);
-            this.feed.Margin = new System.Windows.Forms.Padding(2);
-            this.feed.Name = "feed";
-            this.feed.RowHeadersWidth = 82;
-            this.feed.RowTemplate.Height = 33;
-            this.feed.Size = new System.Drawing.Size(1100, 806);
-            this.feed.TabIndex = 0;
+            this.schedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.schedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.schedule.Location = new System.Drawing.Point(0, 0);
+            this.schedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.schedule.Name = "schedule";
+            this.schedule.RowHeadersWidth = 82;
+            this.schedule.RowTemplate.Height = 33;
+            this.schedule.Size = new System.Drawing.Size(1467, 1008);
+            this.schedule.TabIndex = 0;
             // 
             // view_schedule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1100, 806);
+            this.ClientSize = new System.Drawing.Size(1467, 1008);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "view_schedule";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.Text = "SCHEDULES";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.feed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,6 +123,6 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView feed;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView schedule;
     }
 }

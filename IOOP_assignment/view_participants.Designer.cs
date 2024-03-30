@@ -83,9 +83,9 @@
             this.panel1.Controls.Add(this.part);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 806);
+            this.panel1.Size = new System.Drawing.Size(1467, 1008);
             this.panel1.TabIndex = 9;
             // 
             // part
@@ -93,26 +93,26 @@
             this.part.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.part.Dock = System.Windows.Forms.DockStyle.Fill;
             this.part.Location = new System.Drawing.Point(0, 0);
-            this.part.Margin = new System.Windows.Forms.Padding(2);
+            this.part.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.part.Name = "part";
             this.part.RowHeadersWidth = 82;
             this.part.RowTemplate.Height = 33;
-            this.part.Size = new System.Drawing.Size(1100, 806);
+            this.part.Size = new System.Drawing.Size(1467, 1008);
             this.part.TabIndex = 0;
             // 
             // view_participants
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1100, 806);
+            this.ClientSize = new System.Drawing.Size(1467, 1008);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "view_participants";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
-            this.Text = "VIEW USER";
+            this.Text = "PARTICIPANTS";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.part)).EndInit();
             this.ResumeLayout(false);

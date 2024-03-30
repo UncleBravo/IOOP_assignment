@@ -83,9 +83,9 @@
             this.panel1.Controls.Add(this.com);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 806);
+            this.panel1.Size = new System.Drawing.Size(1467, 1008);
             this.panel1.TabIndex = 9;
             // 
             // com
@@ -93,27 +93,27 @@
             this.com.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.com.Dock = System.Windows.Forms.DockStyle.Fill;
             this.com.Location = new System.Drawing.Point(0, 0);
-            this.com.Margin = new System.Windows.Forms.Padding(2);
+            this.com.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.com.Name = "com";
             this.com.RowHeadersWidth = 82;
             this.com.RowTemplate.Height = 33;
-            this.com.Size = new System.Drawing.Size(1100, 806);
+            this.com.Size = new System.Drawing.Size(1467, 1008);
             this.com.TabIndex = 0;
             // 
             // view_comment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1100, 806);
+            this.ClientSize = new System.Drawing.Size(1467, 1008);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "view_comment";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VIEW USER";
+            this.Text = "COMMENTS";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.com)).EndInit();
             this.ResumeLayout(false);

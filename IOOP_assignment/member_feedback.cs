@@ -33,7 +33,7 @@ namespace IOOP_assignment
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             string status;
-            Member obj1 = new Member(member_reference_number.Text, feedback.Text);
+            Member obj1 = new Member();
             status = obj1.SendFeedback(member_reference_number.Text, feedback.Text);
 
             if (status != null)

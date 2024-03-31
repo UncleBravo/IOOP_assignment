@@ -50,7 +50,7 @@ namespace IOOP_assignment
         {
             string status;
             TrainingSchedule obj1 = new TrainingSchedule(reference_number.Text, coach_id.Text, time.Text, date.Text);
-            status = obj1.EditSchedule();
+            status = obj1.EditSchedule(reference_number.Text, coach_id.Text, time.Text, date.Text);
 
             if (status != null)
             {

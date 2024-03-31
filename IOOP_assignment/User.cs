@@ -142,7 +142,7 @@ namespace IOOP_assignment
 
             int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
             if (count > 0)
-                status = "User always exists";
+                status = "User already exists";
             else
             {
                 SqlCommand cmdInsert = new SqlCommand("Insert into Waiting_List (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);

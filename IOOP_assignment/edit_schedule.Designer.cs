@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.user = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.reference_number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.time = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.coach_id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.date = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,27 +94,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // user
+            // reference_number
             // 
-            this.user.Location = new System.Drawing.Point(56, 102);
-            this.user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(477, 49);
-            this.user.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.user.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.user.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.user.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.reference_number.Location = new System.Drawing.Point(56, 102);
+            this.reference_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.reference_number.Name = "reference_number";
+            this.reference_number.Size = new System.Drawing.Size(477, 49);
+            this.reference_number.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.reference_number.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.reference_number.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.reference_number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.user.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.user.StateCommon.Border.Rounding = 20;
-            this.user.StateCommon.Border.Width = 1;
-            this.user.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.user.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.user.TabIndex = 4;
-            this.user.Enter += new System.EventHandler(this.user_Enter);
-            this.user.Leave += new System.EventHandler(this.user_Leave);
+            this.reference_number.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.reference_number.StateCommon.Border.Rounding = 20;
+            this.reference_number.StateCommon.Border.Width = 1;
+            this.reference_number.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.reference_number.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reference_number.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.reference_number.TabIndex = 4;
+            this.reference_number.Enter += new System.EventHandler(this.user_Enter);
+            this.reference_number.Leave += new System.EventHandler(this.user_Leave);
             // 
             // label1
             // 
@@ -133,46 +133,27 @@
             this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton1.TabIndex = 6;
             this.kryptonButton1.Values.Text = "EDIT";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // kryptonTextBox1
+            // time
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(56, 327);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(477, 49);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.time.Location = new System.Drawing.Point(56, 327);
+            this.time.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(477, 49);
+            this.time.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.time.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.time.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.time.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.kryptonTextBox1.TabIndex = 7;
-            // 
-            // kryptonTextBox2
-            // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(56, 430);
-            this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(477, 49);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.kryptonTextBox2.TabIndex = 8;
+            this.time.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.time.StateCommon.Border.Rounding = 20;
+            this.time.StateCommon.Border.Width = 1;
+            this.time.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.time.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.time.TabIndex = 7;
             // 
             // label2
             // 
@@ -204,25 +185,25 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Coach ID";
             // 
-            // kryptonTextBox3
+            // coach_id
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(56, 216);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(477, 49);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.coach_id.Location = new System.Drawing.Point(56, 216);
+            this.coach_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.coach_id.Name = "coach_id";
+            this.coach_id.Size = new System.Drawing.Size(477, 49);
+            this.coach_id.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.coach_id.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.coach_id.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.coach_id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox3.StateCommon.Border.Width = 1;
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.kryptonTextBox3.TabIndex = 11;
+            this.coach_id.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.coach_id.StateCommon.Border.Rounding = 20;
+            this.coach_id.StateCommon.Border.Width = 1;
+            this.coach_id.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.coach_id.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coach_id.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.coach_id.TabIndex = 11;
             // 
             // kryptonButton2
             // 
@@ -233,22 +214,29 @@
             this.kryptonButton2.Values.Text = "BACK";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
+            // date
+            // 
+            this.date.Location = new System.Drawing.Point(74, 455);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(332, 37);
+            this.date.TabIndex = 14;
+            // 
             // edit_schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(956, 568);
+            this.Controls.Add(this.date);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.kryptonTextBox3);
+            this.Controls.Add(this.coach_id);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.kryptonTextBox2);
-            this.Controls.Add(this.kryptonTextBox1);
+            this.Controls.Add(this.time);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.user);
+            this.Controls.Add(this.reference_number);
             this.Controls.Add(this.pictureBox1);
             this.Name = "edit_schedule";
             this.Palette = this.kryptonPalette1;
@@ -266,15 +254,15 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox user;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox reference_number;
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox time;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox coach_id;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker date;
     }
 }

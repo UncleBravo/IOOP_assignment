@@ -48,6 +48,11 @@ namespace IOOP_assignment
 
         }
 
+        public User(string refno)
+        {
+            RefNo = refno;
+        }
+
         public User(string refno, string password)
         {
             RefNo = refno;
@@ -95,7 +100,7 @@ namespace IOOP_assignment
 
                 string userRole = cmd2.ExecuteScalar().ToString();
 
-                if (userRole == "Admin")
+                if (userRole == "Administrator")
                 {
                     Admin_Menu admin_Menu = new Admin_Menu();
                     admin_Menu.Show();
@@ -140,7 +145,7 @@ namespace IOOP_assignment
                 status = "User always exists";
             else
             {
-                SqlCommand cmdInsert = new SqlCommand("Insert into AllUsers (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);
+                SqlCommand cmdInsert = new SqlCommand("Insert into Waiting_List (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password) VALUES (@r, @utype, @f, @l, @g, @a, @em, @c, @emn, @emc, @mc, @s, @skill, @user, @pass)", con);
 
                 cmdInsert.Parameters.AddWithValue("@r", ref_no);
                 cmdInsert.Parameters.AddWithValue("@utype", role);
@@ -168,19 +173,39 @@ namespace IOOP_assignment
             con.Close();
             return status;
         }
+       
+        public string update_user(string ref_no, string username, string password)
+        {
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
 
-        public void ViewUserList(User user)
-        {
-            // Implementation 
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from AllUsers where RefNo=@username", con);
+            cmdCheck.Parameters.AddWithValue("@username", ref_no);
+
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE AllUsers SET Username = @username, Password = @password WHERE Refno = @refno", con);
+                cmdUpdate.Parameters.AddWithValue("@refno", ref_no);
+                cmdUpdate.Parameters.AddWithValue("@username", username);
+                cmdUpdate.Parameters.AddWithValue("@password", password);
+                int rowaffected = cmdUpdate.ExecuteNonQuery();
+
+                if (rowaffected > 0)
+                    status = "Details updated sucessfully";
+                else
+                    status = "Process failed. Please try again";
+            }
+
+            else
+            {
+                status = "User doesn't exist. Please try again.";
+            }
+            con.Close();
+            return status;
         }
-        public void ViewWaitingList(User user)
-        {
-            // Implementation 
-        }
-        public void UpdateProfile(string newUsername, string newPassword)
-        {
-            // Implementation 
-        }
+         
 
 
 

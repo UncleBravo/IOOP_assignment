@@ -24,5 +24,21 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Competition obj1 = new Competition(reference_number.Text, competition_name.Text, time.Text, date.Text);
+            status = obj1.AddCompetition(reference_number.Text, competition_name.Text, time.Text, date.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            reference_number.Clear();
+            competition_name.Clear();
+            time.Clear();
+        }
     }
 }

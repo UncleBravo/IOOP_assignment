@@ -34,6 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.role = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.refno = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -68,16 +70,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.role = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.role)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.role)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -140,6 +142,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.kryptonDateTimePicker1);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.role);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.refno);
@@ -182,7 +186,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1495, 964);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // role
+            // 
+            this.role.DropDownWidth = 278;
+            this.role.Items.AddRange(new object[] {
+            "Administrator",
+            "Coach",
+            "Manager",
+            "Member"});
+            this.role.Location = new System.Drawing.Point(597, 1765);
+            this.role.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(277, 37);
+            this.role.TabIndex = 46;
+            this.role.Text = "--- Select Role ---";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(93, 1769);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 33);
+            this.label21.TabIndex = 45;
+            this.label21.Text = "Role ";
             // 
             // refno
             // 
@@ -516,30 +544,22 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "PERSONAL INFORMATION";
             // 
-            // label21
+            // label4
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(93, 1769);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(83, 33);
-            this.label21.TabIndex = 45;
-            this.label21.Text = "Role ";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(93, 311);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(176, 33);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "Date of Birth";
             // 
-            // role
+            // kryptonDateTimePicker1
             // 
-            this.role.DropDownWidth = 278;
-            this.role.Items.AddRange(new object[] {
-            "Administrator",
-            "Coaching",
-            "Manager",
-            "Member"});
-            this.role.Location = new System.Drawing.Point(597, 1765);
-            this.role.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.role.Name = "role";
-            this.role.Size = new System.Drawing.Size(277, 37);
-            this.role.TabIndex = 46;
-            this.role.Text = "--- Select Role ---";
+            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(597, 307);
+            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
+            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(310, 37);
+            this.kryptonDateTimePicker1.TabIndex = 48;
             // 
             // enrollment_form
             // 
@@ -562,10 +582,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.role)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.role)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -613,5 +633,7 @@
         private System.Windows.Forms.Label label20;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox role;
         private System.Windows.Forms.Label label21;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private System.Windows.Forms.Label label4;
     }
 }

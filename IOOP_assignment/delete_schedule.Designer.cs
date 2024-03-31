@@ -32,7 +32,7 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.user = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.reference_number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,25 +88,25 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Reference Number";
             // 
-            // user
+            // reference_number
             // 
-            this.user.Location = new System.Drawing.Point(20, 134);
-            this.user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(477, 49);
-            this.user.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.user.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.user.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.user.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.reference_number.Location = new System.Drawing.Point(20, 134);
+            this.reference_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.reference_number.Name = "reference_number";
+            this.reference_number.Size = new System.Drawing.Size(477, 49);
+            this.reference_number.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.reference_number.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.reference_number.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.reference_number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.user.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.user.StateCommon.Border.Rounding = 20;
-            this.user.StateCommon.Border.Width = 1;
-            this.user.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.user.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.user.TabIndex = 11;
+            this.reference_number.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.reference_number.StateCommon.Border.Rounding = 20;
+            this.reference_number.StateCommon.Border.Width = 1;
+            this.reference_number.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.reference_number.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reference_number.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.reference_number.TabIndex = 11;
             // 
             // kryptonButton1
             // 
@@ -116,6 +116,7 @@
             this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton1.TabIndex = 13;
             this.kryptonButton1.Values.Text = "DELETE";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonButton2
             // 
@@ -136,7 +137,7 @@
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.user);
+            this.Controls.Add(this.reference_number);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "delete_schedule";
@@ -156,7 +157,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox user;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox reference_number;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }

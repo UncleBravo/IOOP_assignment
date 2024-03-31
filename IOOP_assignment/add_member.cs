@@ -22,5 +22,20 @@ namespace IOOP_assignment
         {
 
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Manager obj1 = new Manager(member_reference_number.Text, competition_reference_number.Text);
+            status = obj1.AddMemberToCompetition();
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            member_reference_number.Clear();
+            competition_reference_number.Clear();
+        }
     }
 }

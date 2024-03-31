@@ -24,5 +24,21 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            TrainingSchedule obj1 = new TrainingSchedule(reference_number.Text, coach_id.Text, time.Text, date.Text);
+            status = obj1.AddSchedule(reference_number.Text, coach_id.Text, time.Text, date.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            reference_number.Clear();
+            coach_id.Clear();
+            time.Clear();
+        }
     }
 }

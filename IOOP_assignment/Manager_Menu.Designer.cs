@@ -32,10 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.PnlNav = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
@@ -57,12 +59,12 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -72,9 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +115,17 @@
             this.button5.Text = "Update Profile";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
+            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 37;
+            this.pictureBox6.TabStop = false;
             // 
             // kryptonPalette1
             // 
@@ -172,6 +183,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Manager";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources._128_1280822_check_mark_box_clip_art_blue_admin_icon_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -208,6 +230,7 @@
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button19
             // 
@@ -225,6 +248,7 @@
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // delete_competition
             // 
@@ -278,6 +302,7 @@
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // delete_member
             // 
@@ -329,6 +354,7 @@
             this.coach_view.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.coach_view.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.coach_view.UseVisualStyleBackColor = true;
+            this.coach_view.Click += new System.EventHandler(this.coach_view_Click);
             // 
             // button1
             // 
@@ -465,17 +491,6 @@
             this.pictureBox12.TabIndex = 28;
             this.pictureBox12.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources._128_1280822_check_mark_box_clip_art_blue_admin_icon_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
@@ -486,17 +501,6 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 28;
             this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 37;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -548,8 +552,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -559,9 +565,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 

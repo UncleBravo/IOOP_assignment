@@ -25,7 +25,7 @@ namespace IOOP_assignment
             this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void kryptonButton1_Click(object sender, EventArgs e)
         {
 
         }

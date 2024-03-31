@@ -19,7 +19,7 @@ namespace IOOP_assignment
         }
 
         
-        public string SendRecommendation()
+        public string SendRecommendation(string refNo, string competionRefNo)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -27,8 +27,8 @@ namespace IOOP_assignment
 
             SqlCommand cmdInsert = new SqlCommand("Insert into Recommendations (RefNo, Competition_Reference_Number) VALUES (@r, @cr)", con);
 
-            cmdInsert.Parameters.AddWithValue("@r", RefNo);
-            cmdInsert.Parameters.AddWithValue("@cr", competition_reference);
+            cmdInsert.Parameters.AddWithValue("@r", refNo);
+            cmdInsert.Parameters.AddWithValue("@cr", competionRefNo);
 
             int rowaffected = cmdInsert.ExecuteNonQuery();
             if (rowaffected > 0)

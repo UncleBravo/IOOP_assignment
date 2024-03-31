@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace IOOP_assignment
 {
@@ -20,17 +21,17 @@ namespace IOOP_assignment
 
         private void user_Enter(object sender, EventArgs e)
         {
-            if (user.Text == "Add Reference Number")
+            if (coach_refNo.Text == "Add Reference Number")
             {
-                user.Text = "";
+                coach_refNo.Text = "";
             }
         }
 
         private void user_Leave(object sender, EventArgs e)
         {
-            if (user.Text == "")
+            if (coach_refNo.Text == "")
             {
-                user.Text = "Add Reference Number";
+                coach_refNo.Text = "Add Reference Number";
             }
         }
 
@@ -44,6 +45,22 @@ namespace IOOP_assignment
             Coach_Menu form1 = new Coach_Menu();
             form1.Show();
             this.Hide();
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Coach obj1 = new Coach(coach_refNo.Text, member_refNo.Text, textBox1.Text);
+            status = obj1.Comment(coach_refNo.Text, member_refNo.Text, textBox1.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            coach_refNo.Clear();
+            member_refNo.Clear();
+            textBox1.Clear();
         }
     }
 }

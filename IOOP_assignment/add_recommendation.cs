@@ -50,7 +50,7 @@ namespace IOOP_assignment
         {
             string status;
             Coach obj1 = new Coach(member_refNo.Text, competition_RefNo.Text);
-            status = obj1.SendRecommendation();
+            status = obj1.SendRecommendation(member_refNo.Text, competition_RefNo.Text);
             
             if (status != null)
             {

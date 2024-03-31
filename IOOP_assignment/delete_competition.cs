@@ -21,7 +21,7 @@ namespace IOOP_assignment
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            Member_Form form1 = new Member_Form();
+            Manager_Menu form1 = new Manager_Menu();
             form1.Show();
             this.Hide();
         }

@@ -16,6 +16,11 @@ namespace IOOP_assignment
 
         public Manager() { }
 
+        public Manager(string member_refNo)
+        {
+            string Refno = member_refNo;
+            
+        }
 
         public Manager(string member_refNo, string competition_refNo)
         {
@@ -24,16 +29,16 @@ namespace IOOP_assignment
         }
 
 
-        public string AddResults()
+        public string AddResults(string member_refNo, string competition_refNo)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdInsert = new SqlCommand("Insert into Result (RefNo, Competition_Reference_Number) VALUES (@r, @cr)", con);
+            SqlCommand cmdInsert = new SqlCommand("Insert into Result (Member_RefNo, Comp_RefNo) VALUES (@r, @cr)", con);
 
-            cmdInsert.Parameters.AddWithValue("@r", RefNo);
-            cmdInsert.Parameters.AddWithValue("@cr", competition_reference_number);
+            cmdInsert.Parameters.AddWithValue("@r", member_refNo);
+            cmdInsert.Parameters.AddWithValue("@cr", competition_refNo);
 
             int rowaffected = cmdInsert.ExecuteNonQuery();
             if (rowaffected > 0)
@@ -46,16 +51,16 @@ namespace IOOP_assignment
             return status;
         }
 
-        public string AddMemberToCompetition()
+        public string AddMemberToCompetition(string member_refNo, string competition_refNo)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdInsert = new SqlCommand("Insert into Participants (RefNo, Competition_Reference_Number) VALUES (@r, @cr)", con);
+            SqlCommand cmdInsert = new SqlCommand("Insert into Participants (Member_RefNo, Comp_RefNo) VALUES (@r, @cr)", con);
 
-            cmdInsert.Parameters.AddWithValue("@r", RefNo);
-            cmdInsert.Parameters.AddWithValue("@cr", competition_reference_number);
+            cmdInsert.Parameters.AddWithValue("@r", member_refNo);
+            cmdInsert.Parameters.AddWithValue("@cr", competition_refNo);
 
             int rowaffected = cmdInsert.ExecuteNonQuery();
             if (rowaffected > 0)
@@ -68,21 +73,21 @@ namespace IOOP_assignment
             return status;
         }
 
-        public string DeleteParticipant()
+        public string DeleteParticipant(string member_refNo, string competition_refNo)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from Participants where RefNo=@refno", con);
-            cmdCheck.Parameters.AddWithValue("@refno", RefNo);
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from Participants where Member_RefNo = @refno", con);
+            cmdCheck.Parameters.AddWithValue("@refno", member_refNo);
 
             int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
             if (count > 0)
             {
-                SqlCommand cmdDelete = new SqlCommand("Delete FROM Participants WHERE RefNo = @refno and Competition_Reference_Number = @crn", con);
-                cmdDelete.Parameters.AddWithValue("@refno", RefNo);
-                cmdDelete.Parameters.AddWithValue("@crn", competition_reference_number);
+                SqlCommand cmdDelete = new SqlCommand("Delete FROM Participants WHERE Member_RefNo = @refno and Comp_RefNo = @crn", con);
+                cmdDelete.Parameters.AddWithValue("@refno", member_refNo);
+                cmdDelete.Parameters.AddWithValue("@crn", competition_refNo);
                 int rowaffected = cmdDelete.ExecuteNonQuery();
 
                 if (rowaffected > 0)

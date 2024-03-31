@@ -86,8 +86,8 @@ namespace IOOP_assignment
             if (count > 0)
             {
                 SqlCommand cmdDelete = new SqlCommand("Delete FROM Participants WHERE Member_RefNo = @refno and Comp_RefNo = @crn", con);
-                cmdDelete.Parameters.AddWithValue("@refno", RefNo);
-                cmdDelete.Parameters.AddWithValue("@crn", competition_reference_number);
+                cmdDelete.Parameters.AddWithValue("@refno", member_refNo);
+                cmdDelete.Parameters.AddWithValue("@crn", competition_refNo);
                 int rowaffected = cmdDelete.ExecuteNonQuery();
 
                 if (rowaffected > 0)

@@ -21,7 +21,8 @@ namespace IOOP_assignment
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            view_recommendations form1 = new view_recommendations();
+            form1.Show();
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -72,6 +73,24 @@ namespace IOOP_assignment
             delete_competition form5 = new delete_competition();
             form5.Show();
             this.Hide();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            view_competition form6 = new view_competition();
+            form6.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            view_participants form7 = new view_participants();
+            form7.Show();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            view_results form8 = new view_results();
+            form8.Show();
         }
     }
 }

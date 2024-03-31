@@ -43,5 +43,23 @@ namespace IOOP_assignment
             form3.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            view_payments form4 = new view_payments();
+            form4.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            view_competition form5 = new view_competition();
+            form5.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            view_schedule form6 = new view_schedule();
+            form6.Show();
+        }
     }
 }

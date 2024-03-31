@@ -67,5 +67,11 @@ namespace IOOP_assignment
             view_comment form7 = new view_comment();
             form7.Show();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            view_results form = new view_results();
+            form.Show();
+        }
     }
 }

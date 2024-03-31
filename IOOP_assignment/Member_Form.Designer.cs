@@ -248,6 +248,7 @@
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button16
             // 

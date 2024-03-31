@@ -102,29 +102,7 @@ namespace IOOP_assignment
 
             con.Close();
             return status;
-        }
-
-        public string ViewComments(string member_refNo)
-            {
-            string status = null;
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
-            con.Open();
-
-            SqlCommand cmdInsert = new SqlCommand("Insert into Feedback (Payment_RefNo, Member_RefNo) VALUES (@r, @cr)", con);
-
-            cmdInsert.Parameters.AddWithValue("@r", payment_refNo);
-            cmdInsert.Parameters.AddWithValue("@cr", member_refNo);
-
-            int rowaffected = cmdInsert.ExecuteNonQuery();
-            if (rowaffected > 0)
-                status = "Payment details added sucessfully";
-            else
-                status = "Process failed, please try again.";
-
-
-            con.Close();
-            return status;
-        }
+        }      
   
 
     }

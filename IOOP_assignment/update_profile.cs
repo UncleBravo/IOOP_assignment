@@ -13,7 +13,6 @@ namespace IOOP_assignment
 {
     public partial class update_profile : KryptonForm
     {
-        private string ref_no, user_name, password;
         public update_profile()
         {
             InitializeComponent();

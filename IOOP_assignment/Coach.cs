@@ -25,7 +25,7 @@ namespace IOOP_assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdInsert = new SqlCommand("Insert into Recommendations (RefNo, Competition_Reference_Number) VALUES (@r, @cr)", con);
+            SqlCommand cmdInsert = new SqlCommand("Insert into Recommendations (Member_RefNo, Comp_Ref) VALUES (@r, @cr)", con);
 
             cmdInsert.Parameters.AddWithValue("@r", refNo);
             cmdInsert.Parameters.AddWithValue("@cr", competionRefNo);

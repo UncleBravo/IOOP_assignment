@@ -29,16 +29,16 @@ namespace IOOP_assignment
         }
 
 
-        public string AddResults(string member_refNo, string competition_refNo)
+        public string AddResults(string competition_refNo, string result)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdInsert = new SqlCommand("Insert into Result (Member_RefNo, Comp_RefNo) VALUES (@r, @cr)", con);
+            SqlCommand cmdInsert = new SqlCommand("Insert into Result (Comp_RefNo, Results) VALUES (@r, @cr)", con);
 
-            cmdInsert.Parameters.AddWithValue("@r", member_refNo);
-            cmdInsert.Parameters.AddWithValue("@cr", competition_refNo);
+            cmdInsert.Parameters.AddWithValue("@r", competition_refNo);
+            cmdInsert.Parameters.AddWithValue("@cr", result);
 
             int rowaffected = cmdInsert.ExecuteNonQuery();
             if (rowaffected > 0)

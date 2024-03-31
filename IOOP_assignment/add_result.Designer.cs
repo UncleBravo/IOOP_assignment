@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.user = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.competition_reference_number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -87,27 +87,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // user
+            // competition_reference_number
             // 
-            this.user.Location = new System.Drawing.Point(56, 102);
-            this.user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(477, 49);
-            this.user.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.user.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.user.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.user.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.competition_reference_number.Location = new System.Drawing.Point(56, 102);
+            this.competition_reference_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.competition_reference_number.Name = "competition_reference_number";
+            this.competition_reference_number.Size = new System.Drawing.Size(477, 49);
+            this.competition_reference_number.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.competition_reference_number.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.competition_reference_number.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.competition_reference_number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.user.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.user.StateCommon.Border.Rounding = 20;
-            this.user.StateCommon.Border.Width = 1;
-            this.user.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.user.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.user.TabIndex = 4;
-            this.user.Enter += new System.EventHandler(this.user_Enter);
-            this.user.Leave += new System.EventHandler(this.user_Leave);
+            this.competition_reference_number.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.competition_reference_number.StateCommon.Border.Rounding = 20;
+            this.competition_reference_number.StateCommon.Border.Width = 1;
+            this.competition_reference_number.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.competition_reference_number.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.competition_reference_number.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.competition_reference_number.TabIndex = 4;
+            this.competition_reference_number.Enter += new System.EventHandler(this.user_Enter);
+            this.competition_reference_number.Leave += new System.EventHandler(this.user_Leave);
             // 
             // kryptonButton1
             // 
@@ -170,7 +170,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.kryptonButton1);
-            this.Controls.Add(this.user);
+            this.Controls.Add(this.competition_reference_number);
             this.Controls.Add(this.pictureBox1);
             this.Name = "add_result";
             this.Palette = this.kryptonPalette1;
@@ -189,7 +189,7 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox user;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox competition_reference_number;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

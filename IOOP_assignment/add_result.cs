@@ -20,17 +20,17 @@ namespace IOOP_assignment
 
         private void user_Enter(object sender, EventArgs e)
         {
-            if (user.Text == "Add Reference Number")
+            if (competition_reference_number.Text == "Add Reference Number")
             {
-                user.Text = "";
+                competition_reference_number.Text = "";
             }
         }
 
         private void user_Leave(object sender, EventArgs e)
         {
-            if (user.Text == "")
+            if (competition_reference_number.Text == "")
             {
-                user.Text = "Add Reference Number";
+                competition_reference_number.Text = "Add Reference Number";
             }
         }
 
@@ -48,7 +48,18 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            string status;
+            Manager obj1 = new Manager(competition_reference_number.Text, result.Text);
+            status = obj1.AddResults(competition_reference_number.Text, result.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            competition_reference_number.Clear();
 
         }
+ 
     }
 }

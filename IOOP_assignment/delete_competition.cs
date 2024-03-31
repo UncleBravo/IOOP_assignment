@@ -30,7 +30,7 @@ namespace IOOP_assignment
         {
             string status;
             Competition obj1 = new Competition(competition_reference_number.Text);
-            status = obj1.DeleteCompetition();
+            status = obj1.DeleteCompetition(competition_reference_number.Text);
 
             if (status != null)
             {

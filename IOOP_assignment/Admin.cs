@@ -70,10 +70,14 @@ namespace IOOP_assignment
 
                 SqlCommand cmdInsert = new SqlCommand(sqlQuery, con);
 
+                SqlCommand cmdDelete = new SqlCommand("Delete FROM Waiting_List WHERE RefNo = @refno", con);
+                cmdDelete.Parameters.AddWithValue("@refno", ref_no);
+
                 int rowaffected = cmdInsert.ExecuteNonQuery();
+                int i = cmdDelete.ExecuteNonQuery();
 
                 if (rowaffected > 0)
-                    status = "Details deleted sucessfully";
+                    status = "Details added sucessfully";
                 else
                     status = "Process failed. Please try again";
             }

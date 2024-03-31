@@ -20,7 +20,8 @@ namespace IOOP_assignment
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-
+            Manager_Menu form1 = new Manager_Menu();
+            form1.Show();
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)

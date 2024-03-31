@@ -25,12 +25,22 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            Declaration form1 = new Declaration();
-            form1.Show();
-            this.Hide();
+            string status;
+            User obj1 = new User(refno.Text, role.Text, fname.Text, lname.Text, gen.Text, add.Text, email.Text, pn.Text, ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
+            status = obj1.Signup(refno.Text, role.Text, fname.Text, lname.Text, gen.Text, add.Text, email.Text, pn.Text, ecna.Text, ecn.Text, mc.Text, sport.Text, skill.Text, user.Text, pass.Text);
+            if (status != null)
+            {
+                MessageBox.Show(status);
+
+            }
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void kryptonTextBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

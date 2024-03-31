@@ -76,7 +76,16 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            string status;
+            User obj1 = new User(user.Text, pass.Text);
+            status = obj1.Login();
+            if (status != null)
+            {
+                MessageBox.Show(status);
+
+            }
             
+
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
@@ -84,6 +93,16 @@ namespace IOOP_assignment
             enrollment_form obj1 = new enrollment_form();
             obj1.Show();
             this.Hide();
+        }
+
+        private void user_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

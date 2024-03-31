@@ -82,18 +82,18 @@
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 1028);
+            this.panel1.Size = new System.Drawing.Size(237, 822);
             this.panel1.TabIndex = 0;
             // 
             // PnlNav
             // 
             this.PnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.PnlNav.Location = new System.Drawing.Point(0, 341);
-            this.PnlNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PnlNav.Location = new System.Drawing.Point(0, 273);
+            this.PnlNav.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlNav.Name = "PnlNav";
-            this.PnlNav.Size = new System.Drawing.Size(3, 100);
+            this.PnlNav.Size = new System.Drawing.Size(2, 80);
             this.PnlNav.TabIndex = 1;
             // 
             // button5
@@ -103,10 +103,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 930);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(0, 744);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(316, 98);
+            this.button5.Size = new System.Drawing.Size(237, 78);
             this.button5.TabIndex = 6;
             this.button5.Text = "Update Profile";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -115,10 +115,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_31_43_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(-216, -675);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(-162, -540);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1037, 2315);
+            this.pictureBox6.Size = new System.Drawing.Size(778, 1852);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 37;
             this.pictureBox6.TabStop = false;
@@ -144,10 +144,10 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(1173, 24);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Location = new System.Drawing.Point(880, 19);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(51, 45);
+            this.button7.Size = new System.Drawing.Size(38, 36);
             this.button7.TabIndex = 1;
             this.button7.Text = "X";
             this.button7.UseVisualStyleBackColor = true;
@@ -164,10 +164,10 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(316, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(237, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1251, 222);
+            this.panel3.Size = new System.Drawing.Size(938, 178);
             this.panel3.TabIndex = 2;
             // 
             // label1
@@ -175,19 +175,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(168, 24);
+            this.label1.Location = new System.Drawing.Point(126, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 49);
+            this.label1.Size = new System.Drawing.Size(139, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Member";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.team;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 108);
+            this.pictureBox1.Size = new System.Drawing.Size(117, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -196,9 +197,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(963, 128);
+            this.label5.Location = new System.Drawing.Point(722, 102);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(222, 84);
+            this.label5.Size = new System.Drawing.Size(170, 64);
             this.label5.TabIndex = 5;
             this.label5.Text = "Suggestions/ \nFeedback";
             // 
@@ -206,9 +208,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(685, 128);
+            this.label4.Location = new System.Drawing.Point(514, 102);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 84);
+            this.label4.Size = new System.Drawing.Size(137, 64);
             this.label4.TabIndex = 4;
             this.label4.Text = "Schedule/ \nTraining";
             // 
@@ -216,9 +219,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(349, 148);
+            this.label3.Location = new System.Drawing.Point(262, 118);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 42);
+            this.label3.Size = new System.Drawing.Size(162, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Competition";
             // 
@@ -226,9 +230,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 148);
+            this.label2.Location = new System.Drawing.Point(63, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 42);
+            this.label2.Size = new System.Drawing.Size(119, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Payment";
             // 
@@ -239,10 +244,10 @@
             this.button20.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(613, 329);
-            this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button20.Location = new System.Drawing.Point(460, 263);
+            this.button20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(313, 109);
+            this.button20.Size = new System.Drawing.Size(235, 87);
             this.button20.TabIndex = 32;
             this.button20.Text = "       Past\n       Competitions";
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,10 +261,10 @@
             this.button16.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(613, 254);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button16.Location = new System.Drawing.Point(460, 203);
+            this.button16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(313, 60);
+            this.button16.Size = new System.Drawing.Size(235, 48);
             this.button16.TabIndex = 28;
             this.button16.Text = "       View";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,10 +278,10 @@
             this.button23.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(899, 322);
-            this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button23.Location = new System.Drawing.Point(674, 258);
+            this.button23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(313, 60);
+            this.button23.Size = new System.Drawing.Size(235, 48);
             this.button23.TabIndex = 42;
             this.button23.Text = "       Comment";
             this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,10 +295,10 @@
             this.unenrollment_button.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unenrollment_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.unenrollment_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.unenrollment_button.Location = new System.Drawing.Point(325, 378);
-            this.unenrollment_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.unenrollment_button.Location = new System.Drawing.Point(244, 302);
+            this.unenrollment_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.unenrollment_button.Name = "unenrollment_button";
-            this.unenrollment_button.Size = new System.Drawing.Size(313, 60);
+            this.unenrollment_button.Size = new System.Drawing.Size(235, 48);
             this.unenrollment_button.TabIndex = 55;
             this.unenrollment_button.Text = "       Unenroll";
             this.unenrollment_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -307,10 +312,10 @@
             this.add_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_payment.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_payment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
-            this.add_payment.Location = new System.Drawing.Point(325, 312);
-            this.add_payment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_payment.Location = new System.Drawing.Point(244, 250);
+            this.add_payment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_payment.Name = "add_payment";
-            this.add_payment.Size = new System.Drawing.Size(309, 76);
+            this.add_payment.Size = new System.Drawing.Size(232, 61);
             this.add_payment.TabIndex = 54;
             this.add_payment.Text = "       Pay";
             this.add_payment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -325,10 +330,10 @@
             this.send_feedback.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.send_feedback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.send_feedback.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.send_feedback.Location = new System.Drawing.Point(1231, 264);
-            this.send_feedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.send_feedback.Location = new System.Drawing.Point(923, 211);
+            this.send_feedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.send_feedback.Name = "send_feedback";
-            this.send_feedback.Size = new System.Drawing.Size(325, 60);
+            this.send_feedback.Size = new System.Drawing.Size(244, 48);
             this.send_feedback.TabIndex = 73;
             this.send_feedback.Text = "       Send";
             this.send_feedback.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -343,10 +348,10 @@
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(325, 256);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(244, 205);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(313, 60);
+            this.button1.Size = new System.Drawing.Size(235, 48);
             this.button1.TabIndex = 77;
             this.button1.Text = "       View";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -360,10 +365,10 @@
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(917, 256);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(688, 205);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(313, 60);
+            this.button2.Size = new System.Drawing.Size(235, 48);
             this.button2.TabIndex = 81;
             this.button2.Text = "       View";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -373,10 +378,10 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::IOOP_assignment.Properties.Resources.business;
-            this.pictureBox9.Location = new System.Drawing.Point(1101, 338);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox9.Location = new System.Drawing.Point(826, 270);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox9.Size = new System.Drawing.Size(71, 32);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 82;
             this.pictureBox9.TabStop = false;
@@ -384,10 +389,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
-            this.pictureBox7.Location = new System.Drawing.Point(1101, 269);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Location = new System.Drawing.Point(826, 215);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(95, 38);
+            this.pictureBox7.Size = new System.Drawing.Size(71, 30);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 80;
             this.pictureBox7.TabStop = false;
@@ -395,10 +400,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::IOOP_assignment.Properties.Resources.hand;
-            this.pictureBox5.Location = new System.Drawing.Point(508, 332);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(381, 266);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox5.Size = new System.Drawing.Size(71, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 79;
             this.pictureBox5.TabStop = false;
@@ -406,10 +411,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::IOOP_assignment.Properties.Resources.edit;
-            this.pictureBox3.Location = new System.Drawing.Point(1429, 274);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(1072, 219);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(71, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 78;
             this.pictureBox3.TabStop = false;
@@ -417,10 +422,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
-            this.pictureBox2.Location = new System.Drawing.Point(508, 269);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(381, 215);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 38);
+            this.pictureBox2.Size = new System.Drawing.Size(71, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 76;
             this.pictureBox2.TabStop = false;
@@ -428,10 +433,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::IOOP_assignment.Properties.Resources.add;
-            this.pictureBox4.Location = new System.Drawing.Point(509, 394);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(382, 315);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox4.Size = new System.Drawing.Size(71, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 59;
             this.pictureBox4.TabStop = false;
@@ -439,10 +444,10 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::IOOP_assignment.Properties.Resources.competitive;
-            this.pictureBox15.Location = new System.Drawing.Point(797, 349);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox15.Location = new System.Drawing.Point(598, 279);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox15.Size = new System.Drawing.Size(71, 32);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 35;
             this.pictureBox15.TabStop = false;
@@ -450,10 +455,10 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::IOOP_assignment.Properties.Resources.view_logo1;
-            this.pictureBox11.Location = new System.Drawing.Point(797, 268);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox11.Location = new System.Drawing.Point(598, 214);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(95, 38);
+            this.pictureBox11.Size = new System.Drawing.Size(71, 30);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 28;
             this.pictureBox11.TabStop = false;
@@ -461,22 +466,22 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_26_at_10_58_52_removebg_preview;
-            this.pictureBox8.Location = new System.Drawing.Point(739, 148);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Location = new System.Drawing.Point(598, 137);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(827, 879);
+            this.pictureBox8.Size = new System.Drawing.Size(620, 703);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 83;
             this.pictureBox8.TabStop = false;
             // 
             // Member_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1567, 1028);
+            this.ClientSize = new System.Drawing.Size(1175, 822);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.button2);
@@ -497,7 +502,7 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Member_Form";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

@@ -64,6 +64,7 @@
       <HintPath>\\Mac\Home\Downloads\Krypton\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -82,18 +83,27 @@
     <Compile Include="add_competition.Designer.cs">
       <DependentUpon>add_competition.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin.cs" />
     <Compile Include="Admin_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin_Menu.Designer.cs">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Coach.cs" />
+    <Compile Include="Competition.cs" />
+    <Compile Include="Income.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="TrainingSchedule.cs" />
     <Compile Include="update_profile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="update_profile.Designer.cs">
       <DependentUpon>update_profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="view_payments.cs">
       <SubType>Form</SubType>
     </Compile>

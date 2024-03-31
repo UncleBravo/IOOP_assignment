@@ -34,30 +34,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.refno = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonTextBox7 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox8 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pass = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.user = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.kryptonComboBox3 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.skill = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.sport = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.mc = new System.Windows.Forms.TextBox();
+            this.ecn = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.ecna = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pn = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.add = new System.Windows.Forms.TextBox();
+            this.gen = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.lname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.fname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -65,16 +66,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.role = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.role)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -98,6 +101,7 @@
             this.kryptonPanel1.Controls.Add(this.label1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(1495, 201);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
@@ -113,8 +117,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
             this.pictureBox1.Image = global::IOOP_assignment.Properties.Resources.WhatsApp_Image_2024_03_22_at_18_56_53_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(1109, -31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 275);
+            this.pictureBox1.Size = new System.Drawing.Size(283, 275);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -135,30 +140,33 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.role);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.refno);
+            this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.kryptonButton2);
             this.panel1.Controls.Add(this.kryptonButton1);
-            this.panel1.Controls.Add(this.kryptonTextBox7);
-            this.panel1.Controls.Add(this.kryptonTextBox8);
+            this.panel1.Controls.Add(this.pass);
+            this.panel1.Controls.Add(this.user);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.kryptonComboBox3);
+            this.panel1.Controls.Add(this.skill);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.kryptonComboBox2);
+            this.panel1.Controls.Add(this.sport);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.kryptonTextBox6);
-            this.panel1.Controls.Add(this.kryptonTextBox5);
-            this.panel1.Controls.Add(this.kryptonTextBox4);
-            this.panel1.Controls.Add(this.kryptonTextBox3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.kryptonComboBox1);
-            this.panel1.Controls.Add(this.kryptonDateTimePicker1);
+            this.panel1.Controls.Add(this.mc);
+            this.panel1.Controls.Add(this.ecn);
+            this.panel1.Controls.Add(this.ecna);
+            this.panel1.Controls.Add(this.pn);
+            this.panel1.Controls.Add(this.email);
+            this.panel1.Controls.Add(this.add);
+            this.panel1.Controls.Add(this.gen);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.kryptonTextBox2);
-            this.panel1.Controls.Add(this.kryptonTextBox1);
+            this.panel1.Controls.Add(this.lname);
+            this.panel1.Controls.Add(this.fname);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -166,47 +174,69 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 201);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1495, 964);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // refno
+            // 
+            this.refno.Location = new System.Drawing.Point(597, 1694);
+            this.refno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.refno.Name = "refno";
+            this.refno.Size = new System.Drawing.Size(340, 39);
+            this.refno.TabIndex = 43;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(93, 1690);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(269, 33);
+            this.label20.TabIndex = 42;
+            this.label20.Text = "Reference Number ";
+            // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1186, 1720);
+            this.kryptonButton2.Location = new System.Drawing.Point(1181, 1818);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(197, 63);
+            this.kryptonButton2.Size = new System.Drawing.Size(197, 62);
             this.kryptonButton2.TabIndex = 40;
             this.kryptonButton2.Values.Text = "Back to Login";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(906, 1720);
+            this.kryptonButton1.Location = new System.Drawing.Point(901, 1818);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(197, 63);
+            this.kryptonButton1.Size = new System.Drawing.Size(197, 62);
             this.kryptonButton1.TabIndex = 39;
             this.kryptonButton1.Values.Text = "Sign Up";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // kryptonTextBox7
+            // pass
             // 
-            this.kryptonTextBox7.Location = new System.Drawing.Point(598, 1605);
-            this.kryptonTextBox7.Name = "kryptonTextBox7";
-            this.kryptonTextBox7.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox7.TabIndex = 37;
+            this.pass.Location = new System.Drawing.Point(597, 1605);
+            this.pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(340, 39);
+            this.pass.TabIndex = 37;
             // 
-            // kryptonTextBox8
+            // user
             // 
-            this.kryptonTextBox8.Location = new System.Drawing.Point(598, 1523);
-            this.kryptonTextBox8.Name = "kryptonTextBox8";
-            this.kryptonTextBox8.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox8.TabIndex = 36;
+            this.user.Location = new System.Drawing.Point(597, 1522);
+            this.user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(340, 39);
+            this.user.TabIndex = 36;
             // 
             // label18
             // 
@@ -238,21 +268,19 @@
             this.label17.TabIndex = 33;
             this.label17.Text = "LOGIN CREDENTIALS";
             // 
-            // kryptonComboBox3
+            // skill
             // 
-            this.kryptonComboBox3.DropDownWidth = 278;
-            this.kryptonComboBox3.Items.AddRange(new object[] {
+            this.skill.DropDownWidth = 278;
+            this.skill.Items.AddRange(new object[] {
             "Beginner (Member)",
             "Intermediate (Member)",
-            "Advanced (Member)",
-            "Administrator",
-            "Coaching",
-            "Manager"});
-            this.kryptonComboBox3.Location = new System.Drawing.Point(598, 1296);
-            this.kryptonComboBox3.Name = "kryptonComboBox3";
-            this.kryptonComboBox3.Size = new System.Drawing.Size(278, 37);
-            this.kryptonComboBox3.TabIndex = 32;
-            this.kryptonComboBox3.Text = "--- Select Skill Level ---";
+            "Advanced (Member)"});
+            this.skill.Location = new System.Drawing.Point(597, 1296);
+            this.skill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.skill.Name = "skill";
+            this.skill.Size = new System.Drawing.Size(277, 37);
+            this.skill.TabIndex = 32;
+            this.skill.Text = "--- Select Skill Level ---";
             // 
             // label16
             // 
@@ -264,18 +292,19 @@
             this.label16.TabIndex = 31;
             this.label16.Text = "Skill Level";
             // 
-            // kryptonComboBox2
+            // sport
             // 
-            this.kryptonComboBox2.DropDownWidth = 278;
-            this.kryptonComboBox2.Items.AddRange(new object[] {
+            this.sport.DropDownWidth = 278;
+            this.sport.Items.AddRange(new object[] {
             "Badminton",
             "Table Tennis",
             "Golf"});
-            this.kryptonComboBox2.Location = new System.Drawing.Point(598, 1224);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(278, 37);
-            this.kryptonComboBox2.TabIndex = 30;
-            this.kryptonComboBox2.Text = "--- Select Sport ---";
+            this.sport.Location = new System.Drawing.Point(597, 1224);
+            this.sport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sport.Name = "sport";
+            this.sport.Size = new System.Drawing.Size(277, 37);
+            this.sport.TabIndex = 30;
+            this.sport.Text = "--- Select Sport ---";
             // 
             // label15
             // 
@@ -297,68 +326,69 @@
             this.label14.TabIndex = 28;
             this.label14.Text = "SPORTS PREFERENCES";
             // 
-            // textBox2
+            // mc
             // 
-            this.textBox2.Location = new System.Drawing.Point(598, 927);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(756, 113);
-            this.textBox2.TabIndex = 27;
+            this.mc.Location = new System.Drawing.Point(597, 928);
+            this.mc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mc.Multiline = true;
+            this.mc.Name = "mc";
+            this.mc.Size = new System.Drawing.Size(756, 113);
+            this.mc.TabIndex = 27;
             // 
-            // kryptonTextBox6
+            // ecn
             // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(598, 861);
-            this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox6.TabIndex = 26;
+            this.ecn.Location = new System.Drawing.Point(597, 861);
+            this.ecn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ecn.Name = "ecn";
+            this.ecn.Size = new System.Drawing.Size(340, 39);
+            this.ecn.TabIndex = 26;
             // 
-            // kryptonTextBox5
+            // ecna
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(598, 785);
-            this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox5.TabIndex = 25;
+            this.ecna.Location = new System.Drawing.Point(597, 785);
+            this.ecna.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ecna.Name = "ecna";
+            this.ecna.Size = new System.Drawing.Size(340, 39);
+            this.ecna.TabIndex = 25;
+            this.ecna.TextChanged += new System.EventHandler(this.kryptonTextBox5_TextChanged);
             // 
-            // kryptonTextBox4
+            // pn
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(598, 715);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox4.TabIndex = 24;
+            this.pn.Location = new System.Drawing.Point(597, 715);
+            this.pn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn.Name = "pn";
+            this.pn.Size = new System.Drawing.Size(340, 39);
+            this.pn.TabIndex = 24;
             // 
-            // kryptonTextBox3
+            // email
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(598, 633);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox3.TabIndex = 23;
+            this.email.Location = new System.Drawing.Point(597, 632);
+            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(340, 39);
+            this.email.TabIndex = 23;
             // 
-            // textBox1
+            // add
             // 
-            this.textBox1.Location = new System.Drawing.Point(598, 465);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(756, 113);
-            this.textBox1.TabIndex = 22;
+            this.add.Location = new System.Drawing.Point(597, 465);
+            this.add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add.Multiline = true;
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(756, 113);
+            this.add.TabIndex = 22;
             // 
-            // kryptonComboBox1
+            // gen
             // 
-            this.kryptonComboBox1.DropDownWidth = 278;
-            this.kryptonComboBox1.Items.AddRange(new object[] {
+            this.gen.DropDownWidth = 278;
+            this.gen.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.kryptonComboBox1.Location = new System.Drawing.Point(598, 389);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(278, 37);
-            this.kryptonComboBox1.TabIndex = 21;
-            this.kryptonComboBox1.Text = "--- Select Gender ---";
-            // 
-            // kryptonDateTimePicker1
-            // 
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(598, 308);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(383, 37);
-            this.kryptonDateTimePicker1.TabIndex = 20;
+            this.gen.Location = new System.Drawing.Point(597, 389);
+            this.gen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gen.Name = "gen";
+            this.gen.Size = new System.Drawing.Size(277, 37);
+            this.gen.TabIndex = 21;
+            this.gen.Text = "--- Select Gender ---";
             // 
             // label13
             // 
@@ -380,25 +410,27 @@
             this.label12.TabIndex = 18;
             this.label12.Text = "First Name";
             // 
-            // kryptonTextBox2
+            // lname
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(1014, 173);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox2.TabIndex = 17;
+            this.lname.Location = new System.Drawing.Point(1013, 172);
+            this.lname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(340, 39);
+            this.lname.TabIndex = 17;
             // 
-            // kryptonTextBox1
+            // fname
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(598, 173);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(340, 39);
-            this.kryptonTextBox1.TabIndex = 16;
+            this.fname.Location = new System.Drawing.Point(597, 172);
+            this.fname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(340, 39);
+            this.fname.TabIndex = 16;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(93, 927);
+            this.label11.Location = new System.Drawing.Point(93, 928);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(490, 33);
             this.label11.TabIndex = 14;
@@ -408,7 +440,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(93, 857);
+            this.label10.Location = new System.Drawing.Point(93, 858);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(383, 33);
             this.label10.TabIndex = 13;
@@ -464,21 +496,11 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Gender";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(93, 308);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 33);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Date of Birth";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(93, 173);
+            this.label3.Location = new System.Drawing.Point(93, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 33);
             this.label3.TabIndex = 6;
@@ -488,11 +510,36 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(470, 57);
+            this.label2.Location = new System.Drawing.Point(469, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(511, 42);
             this.label2.TabIndex = 5;
             this.label2.Text = "PERSONAL INFORMATION";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(93, 1769);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 33);
+            this.label21.TabIndex = 45;
+            this.label21.Text = "Role ";
+            // 
+            // role
+            // 
+            this.role.DropDownWidth = 278;
+            this.role.Items.AddRange(new object[] {
+            "Administrator",
+            "Coaching",
+            "Manager",
+            "Member"});
+            this.role.Location = new System.Drawing.Point(597, 1765);
+            this.role.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(277, 37);
+            this.role.TabIndex = 46;
+            this.role.Text = "--- Select Role ---";
             // 
             // enrollment_form
             // 
@@ -502,6 +549,7 @@
             this.ClientSize = new System.Drawing.Size(1495, 1165);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.kryptonPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "enrollment_form";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -514,9 +562,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.role)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -530,8 +579,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox lname;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox fname;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -539,28 +588,30 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
+        private System.Windows.Forms.TextBox mc;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox ecn;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox ecna;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox pn;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox email;
+        private System.Windows.Forms.TextBox add;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox gen;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox sport;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox8;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox pass;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox user;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox skill;
         private System.Windows.Forms.Label label16;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox refno;
+        private System.Windows.Forms.Label label20;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox role;
+        private System.Windows.Forms.Label label21;
     }
 }

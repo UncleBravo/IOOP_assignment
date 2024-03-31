@@ -12,23 +12,38 @@ namespace IOOP_assignment
     {
 
         public string competition_reference_number;
+        public string result;
 
         public Manager() { }
 
-        public Manager(string member_refNo,  string competition_refNo)
+
+        public Manager(string member_refNo, string competition_refNo)
         {
             string Refno = member_refNo;
             string competition_reference_number = competition_refNo;
         }
 
-        public void ViewRecommendations(List<Member> recommendedMembers)
-        {
-            // Implementation of viewing recommendations from coaches
-        }
 
-        public void AddResults(string competition, string result)
+        public string AddResults()
         {
-            // Implementation of adding results for a competition
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdInsert = new SqlCommand("Insert into Result (RefNo, Competition_Reference_Number) VALUES (@r, @cr)", con);
+
+            cmdInsert.Parameters.AddWithValue("@r", RefNo);
+            cmdInsert.Parameters.AddWithValue("@cr", competition_reference_number);
+
+            int rowaffected = cmdInsert.ExecuteNonQuery();
+            if (rowaffected > 0)
+                status = "Member added sucessfully";
+            else
+                status = "Process failed, please try again.";
+
+
+            con.Close();
+            return status;
         }
 
         public string AddMemberToCompetition()

@@ -34,6 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.role = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.refno = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -68,16 +70,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.role = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.role)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.role)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -183,6 +183,31 @@
             this.panel1.Size = new System.Drawing.Size(1495, 964);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // role
+            // 
+            this.role.DropDownWidth = 278;
+            this.role.Items.AddRange(new object[] {
+            "Administrator",
+            "Coach",
+            "Manager",
+            "Member"});
+            this.role.Location = new System.Drawing.Point(597, 1765);
+            this.role.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(277, 37);
+            this.role.TabIndex = 46;
+            this.role.Text = "--- Select Role ---";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(93, 1769);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 33);
+            this.label21.TabIndex = 45;
+            this.label21.Text = "Role ";
             // 
             // refno
             // 
@@ -516,31 +541,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "PERSONAL INFORMATION";
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(93, 1769);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(83, 33);
-            this.label21.TabIndex = 45;
-            this.label21.Text = "Role ";
-            // 
-            // role
-            // 
-            this.role.DropDownWidth = 278;
-            this.role.Items.AddRange(new object[] {
-            "Administrator",
-            "Coaching",
-            "Manager",
-            "Member"});
-            this.role.Location = new System.Drawing.Point(597, 1765);
-            this.role.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.role.Name = "role";
-            this.role.Size = new System.Drawing.Size(277, 37);
-            this.role.TabIndex = 46;
-            this.role.Text = "--- Select Role ---";
-            // 
             // enrollment_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -562,10 +562,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.role)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.role)).EndInit();
             this.ResumeLayout(false);
 
         }

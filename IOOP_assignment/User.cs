@@ -100,9 +100,9 @@ namespace IOOP_assignment
 
                 string userRole = cmd2.ExecuteScalar().ToString();
 
-                if (userRole == "Admin")
+                if (userRole == "Administrator")
                 {
-                    Admin_Menu admin_Menu = new Admin_Menu(RefNo, UserName, Password);
+                    Admin_Menu admin_Menu = new Admin_Menu();
                     admin_Menu.Show();
                 }
 

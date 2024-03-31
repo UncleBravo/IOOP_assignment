@@ -274,15 +274,16 @@
             this.button23.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(899, 322);
+            this.button23.Location = new System.Drawing.Point(883, 328);
             this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(313, 60);
             this.button23.TabIndex = 42;
-            this.button23.Text = "       Comment";
+            this.button23.Text = "       Comments";
             this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // unenrollment_button
             // 

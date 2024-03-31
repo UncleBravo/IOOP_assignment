@@ -27,7 +27,7 @@ namespace IOOP_assignment
         {
             string status;
             Manager obj1 = new Manager(member_reference_number.Text, competition_reference_number.Text);
-            status = obj1.AddMemberToCompetition();
+            status = obj1.AddMemberToCompetition(member_reference_number.Text, competition_reference_number.Text);
 
             if (status != null)
             {

@@ -97,7 +97,7 @@ namespace IOOP_assignment
             con.Open();
 
             SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from TrainingSchedule where Schedule_Refno=@refno", con);
-            cmdCheck.Parameters.AddWithValue("@refno", reference_number);
+            cmdCheck.Parameters.AddWithValue("@refno", ref_no);
 
             int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
             if (count > 0)

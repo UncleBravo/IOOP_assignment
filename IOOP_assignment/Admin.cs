@@ -42,7 +42,7 @@ namespace IOOP_assignment
 
             else
             {
-                status = "User doesn't exists in the main table";
+                status = "User doesn't exist in the main table";
             }
 
 
@@ -51,19 +51,40 @@ namespace IOOP_assignment
             return status;
         }
 
-        public DataTable view_users()
+        public string AddUser(string ref_no)
         {
-           
+            string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM AllUsers", con);
-            DataTable dtbl = new DataTable();
-            sqlDa.Fill(dtbl);
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from Waiting_List where RefNo=@username", con);
+            cmdCheck.Parameters.AddWithValue("@username", ref_no);
 
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                string sqlQuery = @"
+                INSERT INTO AllUsers (RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password)
+                SELECT RefNo, UserType, Fname, Lname, Gender, Address, Email, Contact, Emname, EmContact, MC, Sport, Skill, Username, Password
+                FROM Waiting_List";
 
-            con.Close();
-            return dtbl;
+                SqlCommand cmdInsert = new SqlCommand(sqlQuery, con);
+
+                int rowaffected = cmdInsert.ExecuteNonQuery();
+
+                if (rowaffected > 0)
+                    status = "Details deleted sucessfully";
+                else
+                    status = "Process failed. Please try again";
+            }
+
+            else
+            {
+                status = "User doesn't exist in the waiting list";
+            }
+ 
+
+            return status;
         }
 
     }

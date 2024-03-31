@@ -34,8 +34,8 @@
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.member_reference_number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.feedback = new System.Windows.Forms.TextBox();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,7 @@
             this.kryptonButton1.Size = new System.Drawing.Size(105, 46);
             this.kryptonButton1.TabIndex = 6;
             this.kryptonButton1.Values.Text = "SEND";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // label2
             // 
@@ -118,33 +119,33 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Student Reference Number";
             // 
-            // kryptonTextBox3
+            // member_reference_number
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(20, 103);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(477, 49);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.member_reference_number.Location = new System.Drawing.Point(20, 103);
+            this.member_reference_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.member_reference_number.Name = "member_reference_number";
+            this.member_reference_number.Size = new System.Drawing.Size(477, 49);
+            this.member_reference_number.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.member_reference_number.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.member_reference_number.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.member_reference_number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox3.StateCommon.Border.Width = 1;
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            this.kryptonTextBox3.TabIndex = 11;
+            this.member_reference_number.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.member_reference_number.StateCommon.Border.Rounding = 20;
+            this.member_reference_number.StateCommon.Border.Width = 1;
+            this.member_reference_number.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.member_reference_number.StateCommon.Content.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.member_reference_number.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            this.member_reference_number.TabIndex = 11;
             // 
-            // textBox1
+            // feedback
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 222);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(563, 230);
-            this.textBox1.TabIndex = 13;
+            this.feedback.Location = new System.Drawing.Point(38, 222);
+            this.feedback.Multiline = true;
+            this.feedback.Name = "feedback";
+            this.feedback.Size = new System.Drawing.Size(563, 230);
+            this.feedback.TabIndex = 13;
             // 
             // kryptonButton2
             // 
@@ -162,8 +163,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(956, 577);
             this.Controls.Add(this.kryptonButton2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.kryptonTextBox3);
+            this.Controls.Add(this.feedback);
+            this.Controls.Add(this.member_reference_number);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.kryptonButton1);
@@ -187,8 +188,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox member_reference_number;
+        private System.Windows.Forms.TextBox feedback;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

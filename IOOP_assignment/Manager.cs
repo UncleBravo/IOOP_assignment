@@ -42,7 +42,7 @@ namespace IOOP_assignment
 
             int rowaffected = cmdInsert.ExecuteNonQuery();
             if (rowaffected > 0)
-                status = "Member added sucessfully";
+                status = "Result added sucessfully";
             else
                 status = "Process failed, please try again.";
 

@@ -111,5 +111,11 @@ namespace IOOP_assignment
             view_fees form12 = new view_fees();
             form12.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            update_profile update_Profile = new update_profile();
+            update_Profile.Show();
+        }
     }
 }

@@ -111,7 +111,6 @@
             this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "User Type";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // kryptonComboBox1
             // 

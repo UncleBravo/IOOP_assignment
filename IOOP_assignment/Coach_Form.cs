@@ -102,7 +102,7 @@ namespace IOOP_assignment
 
         private void button2_Click(object sender, EventArgs e)
         {
-            view_participants form11 = new view_participants();
+            view_user form11 = new view_user();
             form11.Show();
         }
 

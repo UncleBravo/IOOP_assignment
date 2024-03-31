@@ -21,7 +21,7 @@ namespace IOOP_assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM AllUsers", con);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM AllUsers WHERE UserType = 'Member'", con);
             DataTable dtbl = new DataTable();
             sqlDa.Fill(dtbl);
 

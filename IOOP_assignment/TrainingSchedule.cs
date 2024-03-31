@@ -32,7 +32,7 @@ namespace IOOP_assignment
         }
            
 
-        public string AddSchedule()
+        public string AddSchedule(string ref_no, string coachID, string time, string date)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -40,10 +40,10 @@ namespace IOOP_assignment
 
             SqlCommand cmdInsert = new SqlCommand("Insert into TrainingSchedule (Schedule_Refno, Coach_RefNo, time, date) VALUES (@r, @cid, @time, @date)", con);
 
-            cmdInsert.Parameters.AddWithValue("@r", reference_number);
-            cmdInsert.Parameters.AddWithValue("@cid", coach_id);
+            cmdInsert.Parameters.AddWithValue("@r", ref_no);
+            cmdInsert.Parameters.AddWithValue("@cid", coachID);
             cmdInsert.Parameters.AddWithValue("@time", time);
-            cmdInsert.Parameters.AddWithValue("@date", coach_id);
+            cmdInsert.Parameters.AddWithValue("@date", date);
 
             int rowaffected = cmdInsert.ExecuteNonQuery();
             if (rowaffected > 0)

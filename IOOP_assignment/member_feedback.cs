@@ -45,5 +45,4 @@ namespace IOOP_assignment
             feedback.Clear();
         }
     }
-    }
 }

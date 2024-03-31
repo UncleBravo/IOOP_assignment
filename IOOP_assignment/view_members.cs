@@ -13,15 +13,15 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace IOOP_assignment
 {
-    public partial class view_user : KryptonForm
+    public partial class view_members : KryptonForm
     {
-        public view_user()
+        public view_members()
         {
             InitializeComponent();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM AllUsers", con);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM AllUsers WHERE UserType = 'Member'", con);
             DataTable dtbl = new DataTable();
             sqlDa.Fill(dtbl);
 

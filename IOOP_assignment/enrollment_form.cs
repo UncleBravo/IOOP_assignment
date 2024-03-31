@@ -18,11 +18,6 @@ namespace IOOP_assignment
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             string status;

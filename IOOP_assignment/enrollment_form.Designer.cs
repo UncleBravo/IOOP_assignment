@@ -70,6 +70,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,6 +142,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.kryptonDateTimePicker1);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.role);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.refno);
@@ -182,7 +186,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1495, 964);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // role
             // 
@@ -541,6 +544,23 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "PERSONAL INFORMATION";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(93, 311);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(176, 33);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "Date of Birth";
+            // 
+            // kryptonDateTimePicker1
+            // 
+            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(597, 307);
+            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
+            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(310, 37);
+            this.kryptonDateTimePicker1.TabIndex = 48;
+            // 
             // enrollment_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -613,5 +633,7 @@
         private System.Windows.Forms.Label label20;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox role;
         private System.Windows.Forms.Label label21;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private System.Windows.Forms.Label label4;
     }
 }

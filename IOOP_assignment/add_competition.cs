@@ -29,7 +29,7 @@ namespace IOOP_assignment
         {
             string status;
             Competition obj1 = new Competition(reference_number.Text, competition_name.Text, time.Text, date.Text);
-            status = obj1.AddCompetition();
+            status = obj1.AddCompetition(reference_number.Text, competition_name.Text, time.Text, date.Text);
 
             if (status != null)
             {

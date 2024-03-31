@@ -33,16 +33,16 @@ namespace IOOP_assignment
             this.date = date;
         }
 
-        public string AddCompetition()
+        public string AddCompetition(string competition_refNo, string name, string time, string date)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdInsert = new SqlCommand("Insert into Competitions (refno, competition_name, time, date) VALUES (@r, @cnm, @time, @date)", con);
+            SqlCommand cmdInsert = new SqlCommand("Insert into Competitions (RefNo, CompName, Time, Date) VALUES (@r, @cnm, @time, @date)", con);
 
-            cmdInsert.Parameters.AddWithValue("@r", competition_reference_number);
-            cmdInsert.Parameters.AddWithValue("@cnm", competition_name);
+            cmdInsert.Parameters.AddWithValue("@r", competition_refNo);
+            cmdInsert.Parameters.AddWithValue("@cnm", name);
             cmdInsert.Parameters.AddWithValue("@time", time);
             cmdInsert.Parameters.AddWithValue("@date", date);
 
@@ -57,20 +57,20 @@ namespace IOOP_assignment
             return status;
         }
 
-        public string DeleteCompetition()
+        public string DeleteCompetition(string competition_refNo)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
             SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from Competitions where RefNo=@refno", con);
-            cmdCheck.Parameters.AddWithValue("@refno", competition_reference_number);
+            cmdCheck.Parameters.AddWithValue("@refno", competition_refNo);
 
             int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
             if (count > 0)
             {
                 SqlCommand cmdDelete = new SqlCommand("Delete FROM Competitions WHERE RefNo = @refno", con);
-                cmdDelete.Parameters.AddWithValue("@refno", competition_reference_number);
+                cmdDelete.Parameters.AddWithValue("@refno", competition_refNo);
                 int rowaffected = cmdDelete.ExecuteNonQuery();
 
                 if (rowaffected > 0)

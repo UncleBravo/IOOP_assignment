@@ -95,7 +95,8 @@ namespace IOOP_assignment
 
         private void coach_view_Click(object sender, EventArgs e)
         {
-
+            view_user form9 = new view_user();
+            form9.Show();
         }
     }
 }

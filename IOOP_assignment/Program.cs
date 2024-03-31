@@ -16,7 +16,7 @@ namespace IOOP_assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new enrollment_form());
+            Application.Run(new Manager_Menu());
         }
 
         

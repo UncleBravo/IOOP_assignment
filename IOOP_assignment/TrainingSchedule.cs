@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,35 +10,121 @@ namespace IOOP_assignment
 {
     internal class TrainingSchedule
     {
-      
-            public List<string> ScheduleList { get; set; }
+        public string reference_number;
+        public string coach_id;
+        public string time;
+        public string date;
 
-         
-            public TrainingSchedule()
-            {
-                ScheduleList = new List<string>();
-            }
 
-            
-            public void ViewSchedules(DateTime date, User user)
-            {
-                // Implementation 
-            }
+        public TrainingSchedule() { }
 
-            public void AddSchedule(string newSchedule)
-            {
-                // Implementation 
-            }
-
-            public void DeleteSchedule(string schedule)
-            {
-                // Implementation 
-            }
-
-            public void EditSchedule(string oldSchedule, string newSchedule)
-            {
-                // Implementation 
+        public TrainingSchedule(string ref_no)
+        {
+            string refernece_number = ref_no;
         }
+
+        public TrainingSchedule(string ref_no, string coachID, string time, string date)
+        {
+            string refernece_number = ref_no;
+            string coach_id = coachID;
+            this.time = time;
+            this.date = date;   
+        }
+           
+
+        public string AddSchedule()
+        {
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdInsert = new SqlCommand("Insert into TrainingSchedule (refno, coachid, time, date) VALUES (@r, @cid, @time, @date)", con);
+
+            cmdInsert.Parameters.AddWithValue("@r", reference_number);
+            cmdInsert.Parameters.AddWithValue("@cid", coach_id);
+            cmdInsert.Parameters.AddWithValue("@time", time);
+            cmdInsert.Parameters.AddWithValue("@date", coach_id);
+
+            int rowaffected = cmdInsert.ExecuteNonQuery();
+            if (rowaffected > 0)
+                status = "Schedule added sucessfully";
+            else
+                status = "Process failed, please try again.";
+
+
+            con.Close();
+            return status;
+        }
+
+
+        public string DeleteSchedule()
+        {
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from TrainingSchedule where RefNo=@refno", con);
+            cmdCheck.Parameters.AddWithValue("@refno", reference_number);
+
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                SqlCommand cmdDelete = new SqlCommand("Delete FROM TrainingSchedule WHERE RefNo = @refno", con);
+                cmdDelete.Parameters.AddWithValue("@refno", reference_number);
+                int rowaffected = cmdDelete.ExecuteNonQuery();
+
+                if (rowaffected > 0)
+                    status = "Details deleted sucessfully";
+                else
+                    status = "Process failed. Please try again";
+            }
+
+            else
+            {
+                status = "Schedule doesn't exist. Please try again.";
+            }
+
+
+
+            con.Close();
+            return status;
+        }
+
+        public string EditSchedule()
+        {
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from TrainingSchedule where RefNo=@refno", con);
+            cmdCheck.Parameters.AddWithValue("@refno", reference_number);
+
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE TrainingSchedule SET RefNo = @refno, CoachID = @coachid, Time = @time, Date = @date WHERE Refno = @refno", con);
+                cmdUpdate.Parameters.AddWithValue("@refno", reference_number);
+                cmdUpdate.Parameters.AddWithValue("@coachid", coach_id); 
+                cmdUpdate.Parameters.AddWithValue("@time", time); 
+                cmdUpdate.Parameters.AddWithValue("@date", date);
+                int rowaffected = cmdUpdate.ExecuteNonQuery();
+
+                if (rowaffected > 0)
+                    status = "Details updated sucessfully";
+                else
+                    status = "Process failed. Please try again";
+            }
+
+            else
+            {
+                status = "Schedule doesn't exist. Please try again.";
+            }
+
+
+            con.Close();
+            return status;
+        }
+    
 
     }
 }

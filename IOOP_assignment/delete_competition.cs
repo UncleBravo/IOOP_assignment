@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace IOOP_assignment
 {
@@ -23,6 +24,20 @@ namespace IOOP_assignment
             Member_Form form1 = new Member_Form();
             form1.Show();
             this.Hide();
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Competition obj1 = new Competition(competition_reference_number.Text);
+            status = obj1.DeleteCompetition();
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            competition_reference_number.Clear();
         }
     }
 }

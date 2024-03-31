@@ -92,5 +92,10 @@ namespace IOOP_assignment
             view_results form8 = new view_results();
             form8.Show();
         }
+
+        private void coach_view_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

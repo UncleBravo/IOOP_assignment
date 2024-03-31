@@ -20,17 +20,17 @@ namespace IOOP_assignment
 
         private void user_Enter(object sender, EventArgs e)
         {
-            if (user.Text == "Add Reference Number")
+            if (member_refNo.Text == "Add Reference Number")
             {
-                user.Text = "";
+                member_refNo.Text = "";
             }
         }
 
         private void user_Leave(object sender, EventArgs e)
         {
-            if (user.Text == "")
+            if (member_refNo.Text == "")
             {
-                user.Text = "Add Reference Number";
+                member_refNo.Text = "Add Reference Number";
             }
         }
 
@@ -44,6 +44,21 @@ namespace IOOP_assignment
             Coach_Menu form1 = new Coach_Menu();
             form1.Show();
             this.Hide();
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Coach obj1 = new Coach(member_refNo.Text, competition_RefNo.Text);
+            status = obj1.SendRecommendation();
+            
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            member_refNo.Clear();
+            competition_RefNo.Clear();
         }
     }
 }

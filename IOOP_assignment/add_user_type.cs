@@ -27,7 +27,7 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            string status;
+            reference_number.Clear();
 
 
         }

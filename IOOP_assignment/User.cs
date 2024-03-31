@@ -173,15 +173,6 @@ namespace IOOP_assignment
             con.Close();
             return status;
         }
-
-        public void ViewUserList(User user)
-        {
-            // Implementation 
-        }
-        public void ViewWaitingList(User user)
-        {
-            // Implementation 
-        }
        
         public string update_user(string ref_no, string username, string password)
         {

@@ -34,6 +34,8 @@ namespace IOOP_assignment
             {
                 MessageBox.Show(status);
             }
+
+            refno.Clear();
         }
     }
 }

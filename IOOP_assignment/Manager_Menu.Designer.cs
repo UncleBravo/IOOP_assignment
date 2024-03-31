@@ -354,6 +354,7 @@
             this.coach_view.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.coach_view.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.coach_view.UseVisualStyleBackColor = true;
+            this.coach_view.Click += new System.EventHandler(this.coach_view_Click);
             // 
             // button1
             // 

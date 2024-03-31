@@ -29,5 +29,20 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Member obj1 = new Member(member_reference_number.Text);
+            status = obj1.Unenroll(member_reference_number.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            member_reference_number.Clear();
+            Reason.Clear();
+        }
     }
 }

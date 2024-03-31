@@ -75,10 +75,5 @@ namespace IOOP_assignment
             con.Close();
             return status;
         }
-
-        public void Unenroll(string trainingSchedule)
-        {
-            // Implementation 
-        }
     }
 }

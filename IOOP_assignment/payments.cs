@@ -29,5 +29,20 @@ namespace IOOP_assignment
             form1.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string status;
+            Member obj1 = new Member(Payment.Text, Member.Text);
+            status = obj1.Pay(Payment.Text, Member.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
+
+            Payment.Clear();
+            Member.Clear();
+        }
     }
 }

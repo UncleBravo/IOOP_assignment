@@ -174,7 +174,7 @@ namespace IOOP_assignment
             return status;
         }
        
-        public string update_user(string ref_no, string username, string password)
+        public string update_user(string ref_no, string password)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -186,9 +186,8 @@ namespace IOOP_assignment
             int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
             if (count > 0)
             {
-                SqlCommand cmdUpdate = new SqlCommand("UPDATE AllUsers SET Username = @username, Password = @password WHERE Refno = @refno", con);
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE AllUsers SET Password = @password WHERE Refno = @refno", con);
                 cmdUpdate.Parameters.AddWithValue("@refno", ref_no);
-                cmdUpdate.Parameters.AddWithValue("@username", username);
                 cmdUpdate.Parameters.AddWithValue("@password", password);
                 int rowaffected = cmdUpdate.ExecuteNonQuery();
 

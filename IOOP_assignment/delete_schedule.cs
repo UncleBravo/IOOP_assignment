@@ -29,7 +29,7 @@ namespace IOOP_assignment
         {
             string status;
             TrainingSchedule obj1 = new TrainingSchedule(reference_number.Text);
-            status = obj1.DeleteSchedule();
+            status = obj1.DeleteSchedule(reference_number.Text);
 
             if (status != null)
             {

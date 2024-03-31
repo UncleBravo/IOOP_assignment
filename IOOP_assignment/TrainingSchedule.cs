@@ -57,20 +57,20 @@ namespace IOOP_assignment
         }
 
 
-        public string DeleteSchedule()
+        public string DeleteSchedule(string ref_no)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
             SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) from TrainingSchedule where Schedule_Refno=@refno", con);
-            cmdCheck.Parameters.AddWithValue("@refno", reference_number);
+            cmdCheck.Parameters.AddWithValue("@refno", ref_no);
 
             int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
             if (count > 0)
             {
                 SqlCommand cmdDelete = new SqlCommand("Delete FROM TrainingSchedule WHERE Schedule_Refno = @refno", con);
-                cmdDelete.Parameters.AddWithValue("@refno", reference_number);
+                cmdDelete.Parameters.AddWithValue("@refno", ref_no);
                 int rowaffected = cmdDelete.ExecuteNonQuery();
 
                 if (rowaffected > 0)
@@ -90,7 +90,7 @@ namespace IOOP_assignment
             return status;
         }
 
-        public string EditSchedule()
+        public string EditSchedule(string ref_no, string coachID, string time, string date)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -103,8 +103,8 @@ namespace IOOP_assignment
             if (count > 0)
             {
                 SqlCommand cmdUpdate = new SqlCommand("UPDATE TrainingSchedule SET Schedule_Refno = @refno, Coach_RefNo = @coachid, time = @time, date = @date WHERE Schedule_Refno = @refno", con);
-                cmdUpdate.Parameters.AddWithValue("@refno", reference_number);
-                cmdUpdate.Parameters.AddWithValue("@coachid", coach_id); 
+                cmdUpdate.Parameters.AddWithValue("@refno", ref_no);
+                cmdUpdate.Parameters.AddWithValue("@coachid", coachID); 
                 cmdUpdate.Parameters.AddWithValue("@time", time); 
                 cmdUpdate.Parameters.AddWithValue("@date", date);
                 int rowaffected = cmdUpdate.ExecuteNonQuery();

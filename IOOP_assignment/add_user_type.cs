@@ -27,6 +27,14 @@ namespace IOOP_assignment
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            string status;
+            Admin obj1 = new Admin(reference_number.Text);
+            status = obj1.AddUser(reference_number.Text);
+
+            if (status != null)
+            {
+                MessageBox.Show(status);
+            }
             reference_number.Clear();
 
 

@@ -102,7 +102,7 @@ namespace IOOP_assignment
 
         private void button2_Click(object sender, EventArgs e)
         {
-            view_user form11 = new view_user();
+            view_members form11 = new view_members();
             form11.Show();
         }
 
@@ -110,6 +110,12 @@ namespace IOOP_assignment
         {
             view_fees form12 = new view_fees();
             form12.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            update_profile update_Profile = new update_profile();
+            update_Profile.Show();
         }
     }
 }

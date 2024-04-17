@@ -92,6 +92,12 @@
     </Compile>
     <Compile Include="Coach.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="edit_entire_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_entire_profile.Designer.cs">
+      <DependentUpon>edit_entire_profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Income.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Manager.cs" />
@@ -169,6 +175,12 @@
     </Compile>
     <Compile Include="view_results.Designer.cs">
       <DependentUpon>view_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_members.Designer.cs">
+      <DependentUpon>view_members.cs</DependentUpon>
     </Compile>
     <Compile Include="view_waiting_list.cs">
       <SubType>Form</SubType>
@@ -322,6 +334,9 @@
     <EmbeddedResource Include="Admin_Menu.resx">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="edit_entire_profile.resx">
+      <DependentUpon>edit_entire_profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="update_profile.resx">
       <DependentUpon>update_profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view_results.resx">
       <DependentUpon>view_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_members.resx">
+      <DependentUpon>view_members.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_waiting_list.resx">
       <DependentUpon>view_waiting_list.cs</DependentUpon>

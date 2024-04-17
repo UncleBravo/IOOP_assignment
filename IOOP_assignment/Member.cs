@@ -13,6 +13,8 @@ namespace IOOP_assignment
     internal class Member : User    
     {
         public string payment_reference_number;
+        public string feedback;
+
         public Member() { }
 
         public Member(string member_refNo)
@@ -49,10 +51,27 @@ namespace IOOP_assignment
             con.Close();
             return status;
         }
-        public void SendFeedback(string feedback)
-            {
-                // Implementation of sending feedback to the admin
-            }
+        public string SendFeedback(string ref_no, string feedback)
+        {
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdInsert = new SqlCommand("Insert into Feedback (RefNo, Feedback) VALUES (@r, @cr)", con);
+
+            cmdInsert.Parameters.AddWithValue("@r", ref_no);
+            cmdInsert.Parameters.AddWithValue("@cr", feedback);
+
+            int rowaffected = cmdInsert.ExecuteNonQuery();
+            if (rowaffected > 0)
+                status = "Feedback sent sucessfully";
+            else
+                status = "Process failed, please try again.";
+
+
+            con.Close();
+            return status;
+        }
 
         public string Unenroll(string member_refNo)
             {
@@ -83,12 +102,7 @@ namespace IOOP_assignment
 
             con.Close();
             return status;
-        }
-
-        public void ViewComments(List<string> comments)
-            {
-                // Implementation of viewing comments
-            }
+        }      
   
 
     }

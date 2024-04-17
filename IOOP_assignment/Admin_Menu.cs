@@ -59,13 +59,14 @@ namespace IOOP_assignment
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            edit_entire_profile editForm = new edit_entire_profile();
+            editForm.Show();
         }
 
         private void update_details_Click(object sender, EventArgs e)
         {
-            update_profile form1 = new update_profile();
-            form1.Show();
+            update_profile update_Profile = new update_profile();
+            update_Profile.Show();
 
         }
 

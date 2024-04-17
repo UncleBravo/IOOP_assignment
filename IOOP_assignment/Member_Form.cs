@@ -73,5 +73,11 @@ namespace IOOP_assignment
             view_results form = new view_results();
             form.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            update_profile update_Profile = new update_profile();
+            update_Profile.Show();
+        }
     }
 }
